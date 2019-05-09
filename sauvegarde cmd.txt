@@ -362,7 +362,486 @@ ocramius/package-versions: ...done generating version class
 
 
 
+PS C:\wamp64\www\le_musee_du_louvre> php bin/console make:entity
 
+ Class name of the entity to create or update (e.g. TinyPizza):
+ > Booking
+
+ created: src/Entity/Booking.php
+ created: src/Repository/BookingRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > prenom
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 20
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > nom
+
+ Field type (enter ? to see all types) [string]:
+ > 20
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+ [ERROR] Invalid type "20".
+
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 20
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > email
+
+ Field type (enter ? to see all types) [string]:
+ > ?
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 30
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > DateTime
+
+ Field type (enter ? to see all types) [string]:
+ > ?
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+
+ Field type (enter ? to see all types) [string]:
+ > datetime
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > nombre
+
+ Field type (enter ? to see all types) [string]:
+ > ?
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+
+ Field type (enter ? to see all types) [string]:
+ > integer
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > type
+
+ Field type (enter ? to see all types) [string]:
+ > ?
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+
+ Field type (enter ? to see all types) [string]:
+ > boolean
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > code
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 20
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > total
+
+ Field type (enter ? to see all types) [string]:
+ > integer
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > id
+
+
+ [ERROR] The "id" property already exists.
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+PS C:\wamp64\www\le_musee_du_louvre> php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. AgreeableGnome):
+ > Booking
+
+ Your entity already exists! So let's add some new fields!
+
+ New property name (press <return> to stop adding fields):
+ > Ticket
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > decompte
+
+ Field type (enter ? to see all types) [string]:
+ > boolean
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > dateDeNaissance
+
+ Field type (enter ? to see all types) [string]:
+ > datetime
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > prix
+
+ Field type (enter ? to see all types) [string]:
+ > integer
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > id_booking
+
+ Field type (enter ? to see all types) [string]:
+ > primary key
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+ [ERROR] Invalid type "primary key".
+
+
+ Field type (enter ? to see all types) [string]:
+ > integer
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+PS C:\wamp64\www\le_musee_du_louvre> php bin/console make:migration
+
+In AbstractMySQLDriver.php line 93:
+
+  An exception occurred in driver: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'db_use
+  r'@'@localhost' (mot de passe: OUI)
+
+
+In PDOConnection.php line 31:
+
+  SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'db_user'@'@localhost' (mot de passe: OU
+  I)
+
+
+In PDOConnection.php line 27:
+
+  SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'db_user'@'@localhost' (mot de passe: OU
+  I)
+
+
+make:migration [--db DB] [--em [EM]] [--shard SHARD] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+PS C:\wamp64\www\le_musee_du_louvre>
+PS C:\wamp64\www\le_musee_du_louvre> php bin/console make:migration
+
+In AbstractMySQLDriver.php line 93:
+
+  An exception occurred in driver: SQLSTATE[HY000] [1049] Base 'booking' inconnue
+
+
+In PDOConnection.php line 31:
+
+  SQLSTATE[HY000] [1049] Base 'booking' inconnue
+
+
+In PDOConnection.php line 27:
+
+  SQLSTATE[HY000] [1049] Base 'booking' inconnue
+
+
+make:migration [--db DB] [--em [EM]] [--shard SHARD] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
+PS C:\wamp64\www\le_musee_du_louvre> composer require symfony/form
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
 
 
 
