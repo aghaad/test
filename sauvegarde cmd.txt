@@ -1,0 +1,504 @@
+Microsoft Windows [version 10.0.17134.706]
+(c) 2018 Microsoft Corporation. Tous droits réservés.
+
+C:\Users\AMRANI>cd ../../wamp64/www/Le_musee_du_Louvre
+Le chemin d’accès spécifié est introuvable.
+
+C:\Users\AMRANI>cd ../../wamp64/www/Le_musée_du_Louvre
+
+C:\wamp64\www\Le_musée_du_Louvre>composer require server --dev
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Package operations: 2 installs, 0 updates, 0 removals
+  - Installing symfony/process (v4.2.8): Loading from cache
+  - Installing symfony/web-server-bundle (v4.2.8): Loading from cache
+Writing lock file
+Generating autoload files
+Symfony operations: 1 recipe (30b1cf712d61dbbf6b1c874285413a4e)
+  - Configuring symfony/web-server-bundle (>=3.3): From github.com/symfony/recipes:master
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+
+Some files may have been created or updated to configure your new packages.
+Please review, edit and commit them: these files are yours.
+
+
+C:\wamp64\www\Le_musée_du_Louvre>composer create-project symfony/website-skeleton Le_musée_du_Louvre
+Installing symfony/website-skeleton (v4.2.8.1)
+  - Installing symfony/website-skeleton (v4.2.8.1): Downloading (100%)
+Created project in Le_musée_du_Louvre
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Package operations: 100 installs, 0 updates, 0 removals
+  - Installing ocramius/package-versions (1.4.0): Downloading (100%)
+  - Installing symfony/flex (v1.2.3): Loading from cache
+
+Fatal error: Cannot declare class Symfony\Flex\Cache, because the name is already in use in C:\wamp64\www\Le_musée_du_Louvre\Le_musée_du_Louvre\vendor\symfony\flex\src\Cache.php on line 101
+
+C:\wamp64\www\Le_musée_du_Louvre>code .
+
+C:\wamp64\www\Le_musée_du_Louvre>php bin/console server:run
+
+ [OK] Server listening on http://127.0.0.1:8000
+
+ // Quit the server with CONTROL-C.
+
+
+C:\wamp64\www\Le_musée_du_Louvre>php bin/console server:run
+
+ [OK] Server listening on http://127.0.0.1:8000
+
+ // Quit the server with CONTROL-C.
+
+
+C:\wamp64\www\Le_musée_du_Louvre>php bin/console make:controller
+
+
+  There are no commands defined in the "make" namespace.
+
+
+
+C:\wamp64\www\Le_musée_du_Louvre>composer require symfony/maker-bundle --dev
+Using version ^1.11 for symfony/maker-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+
+Fatal error: Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/src/Composer/DependencyResolver/RuleSetGenerator.php on line 129
+
+Check https://getcomposer.org/doc/articles/troubleshooting.md#memory-limit-errors for more info on how to handle out of memory errors.
+C:\wamp64\www\Le_musée_du_Louvre>composer require symfony/maker-bundle --dev
+Using version ^1.11 for symfony/maker-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+
+Fatal error: Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/src/Composer/DependencyResolver/RuleSetGenerator.php on line 129
+
+Check https://getcomposer.org/doc/articles/troubleshooting.md#memory-limit-errors for more info on how to handle out of memory errors.
+C:\wamp64\www\Le_musée_du_Louvre>
+
+LE 6 MAI 2019
+
+PS C:\wamp64\www\Le_musée_du_Louvre> composer install
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. Run update to update them.
+Package operations: 99 installs, 0 updates, 0 removals
+  - Installing symfony/flex (v1.2.3): Loading from cache
+  - Installing doctrine/lexer (v1.0.1): Loading from cache
+  - Installing doctrine/annotations (v1.6.1): Loading from cache
+  - Installing doctrine/reflection (v1.0.0): Loading from cache
+  - Installing doctrine/event-manager (v1.0.0): Loading from cache
+  - Installing doctrine/collections (v1.6.1): Loading from cache
+  - Installing doctrine/cache (v1.8.0): Loading from cache
+  - Installing doctrine/persistence (1.1.1): Loading from cache
+  - Installing doctrine/inflector (v1.3.0): Loading from cache
+  - Installing doctrine/common (v2.10.0): Loading from cache
+  - Installing symfony/polyfill-mbstring (v1.11.0): Loading from cache
+  - Installing symfony/contracts (v1.0.2): Loading from cache
+  - Installing symfony/doctrine-bridge (v4.2.8): Loading from cache
+  - Installing doctrine/doctrine-cache-bundle (1.3.5): Loading from cache
+  - Installing doctrine/instantiator (1.2.0): Loading from cache
+  - Installing symfony/stopwatch (v4.2.8): Loading from cache
+  - Installing symfony/console (v4.2.8): Loading from cache
+  - Installing zendframework/zend-eventmanager (3.2.1): Loading from cache
+  - Installing zendframework/zend-code (3.3.1): Loading from cache
+  - Installing ocramius/proxy-manager (2.1.1): Loading from cache
+  - Installing doctrine/dbal (v2.9.2): Loading from cache
+  - Installing doctrine/migrations (v2.0.2): Loading from cache
+  - Installing egulias/email-validator (2.1.7): Loading from cache
+  - Installing jdorn/sql-formatter (v1.2.17): Loading from cache
+  - Installing phpdocumentor/reflection-common (1.0.1): Loading from cache
+  - Installing phpdocumentor/type-resolver (0.4.0): Loading from cache
+  - Installing psr/cache (1.0.1): Loading from cache
+  - Installing psr/container (1.0.0): Loading from cache
+  - Installing psr/simple-cache (1.0.1): Loading from cache
+  - Installing symfony/http-foundation (v4.2.8): Loading from cache
+  - Installing symfony/event-dispatcher (v4.2.8): Loading from cache
+  - Installing psr/log (1.1.0): Loading from cache
+  - Installing symfony/debug (v4.2.8): Loading from cache
+  - Installing symfony/http-kernel (v4.2.8): Loading from cache
+  - Installing symfony/routing (v4.2.8): Loading from cache
+  - Installing symfony/finder (v4.2.8): Loading from cache
+  - Installing symfony/filesystem (v4.2.8): Loading from cache
+  - Installing symfony/dependency-injection (v4.2.8): Loading from cache
+  - Installing symfony/config (v4.2.8): Loading from cache
+  - Installing symfony/var-exporter (v4.2.8): Loading from cache
+  - Installing symfony/cache (v4.2.8): Loading from cache
+  - Installing symfony/framework-bundle (v4.2.8): Loading from cache
+  - Installing sensio/framework-extra-bundle (v5.3.1): Loading from cache
+  - Installing symfony/asset (v4.2.8): Loading from cache
+  - Installing symfony/dotenv (v4.2.8): Loading from cache
+  - Installing symfony/expression-language (v4.2.8): Loading from cache
+  - Installing symfony/inflector (v4.2.8): Loading from cache
+  - Installing symfony/property-access (v4.2.8): Loading from cache
+  - Installing symfony/options-resolver (v4.2.8): Loading from cache
+  - Installing symfony/intl (v4.2.8): Loading from cache
+  - Installing symfony/polyfill-intl-icu (v1.11.0): Loading from cache
+  - Installing symfony/form (v4.2.8): Loading from cache
+  - Installing monolog/monolog (1.24.0): Loading from cache
+  - Installing symfony/monolog-bridge (v4.2.8): Loading from cache
+  - Installing doctrine/orm (v2.6.3): Loading from cache
+  - Installing doctrine/doctrine-bundle (1.10.2): Loading from cache
+  - Installing doctrine/doctrine-migrations-bundle (v2.0.0): Loading from cache
+  - Installing symfony/orm-pack (v1.0.6): Loading from cache
+  - Installing symfony/polyfill-php72 (v1.11.0): Loading from cache
+  - Installing symfony/polyfill-intl-idn (v1.11.0): Loading from cache
+  - Installing symfony/security-core (v4.2.8): Loading from cache
+  - Installing symfony/security-http (v4.2.8): Loading from cache
+  - Installing symfony/security-guard (v4.2.8): Loading from cache
+  - Installing symfony/security-csrf (v4.2.8): Loading from cache
+  - Installing symfony/security-bundle (v4.2.8): Loading from cache
+  - Installing symfony/serializer (v4.2.8): Loading from cache
+  - Installing symfony/property-info (v4.2.8): Loading from cache
+  - Installing webmozart/assert (1.4.0): Loading from cache
+  - Installing phpdocumentor/reflection-docblock (4.3.1): Loading from cache
+  - Installing symfony/serializer-pack (v1.0.2): Loading from cache
+  - Installing swiftmailer/swiftmailer (v6.2.1): Loading from cache
+  - Installing symfony/swiftmailer-bundle (v3.2.6): Loading from cache
+  - Installing symfony/translation (v4.2.8): Loading from cache
+  - Installing twig/twig (v2.9.0): Loading from cache
+  - Installing symfony/twig-bridge (v4.2.8): Loading from cache
+  - Installing symfony/validator (v4.2.8): Loading from cache
+  - Installing psr/link (1.0.0): Loading from cache
+  - Installing fig/link-util (1.0.0): Loading from cache
+  - Installing symfony/web-link (v4.2.8): Loading from cache
+  - Installing symfony/yaml (v4.2.8): Loading from cache
+  - Installing symfony/process (v4.2.8): Loading from cache
+  - Installing facebook/webdriver (1.6.0): Loading from cache
+  - Installing symfony/var-dumper (v4.2.8): Loading from cache
+    Skipped installation of bin Resources/bin/var-dump-server for package symfony/var-dumper: name conflicts with an existing file
+  - Installing symfony/twig-bundle (v4.2.8): Loading from cache
+  - Installing symfony/web-profiler-bundle (v4.2.8): Loading from cache
+  - Installing symfony/profiler-pack (v1.0.4): Loading from cache
+  - Installing symfony/monolog-bundle (v3.3.1): Loading from cache
+  - Installing symfony/debug-bundle (v4.2.8): Loading from cache
+  - Installing easycorp/easy-log-handler (v1.0.7): Loading from cache
+  - Installing symfony/debug-pack (v1.0.7): Loading from cache
+  - Installing symfony/dom-crawler (v4.2.8): Loading from cache
+  - Installing nikic/php-parser (v4.2.1): Loading from cache
+  - Installing symfony/maker-bundle (v1.11.6): Loading from cache
+  - Installing symfony/phpunit-bridge (v4.2.8): Loading from cache
+  - Installing symfony/browser-kit (v4.2.8): Loading from cache
+  - Installing symfony/panther (v0.3.0): Loading from cache
+  - Installing symfony/css-selector (v4.2.8): Loading from cache
+  - Installing symfony/test-pack (v1.0.5): Loading from cache
+  - Installing symfony/web-server-bundle (v4.2.8): Loading from cache
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Symfony operations: 11 recipes (38eb7c0d8d99e91b81a7578e58e0b028)
+  - Configuring doctrine/annotations (>=1.0): From github.com/symfony/recipes:master
+  - Configuring doctrine/doctrine-cache-bundle (>=1.3.5): From auto-generated recipe
+  - Configuring sensio/framework-extra-bundle (>=5.2): From github.com/symfony/recipes:master
+  - Configuring doctrine/doctrine-bundle (>=1.6): From github.com/symfony/recipes:master
+  - Configuring doctrine/doctrine-migrations-bundle (>=1.2): From github.com/symfony/recipes:master
+  - Configuring symfony/security-bundle (>=3.3): From github.com/symfony/recipes:master
+  - Configuring symfony/swiftmailer-bundle (>=2.5): From github.com/symfony/recipes:master
+  - Configuring symfony/translation (>=3.3): From github.com/symfony/recipes:master
+  - Configuring symfony/validator (>=4.1): From github.com/symfony/recipes:master
+  - Configuring symfony/maker-bundle (>=1.0): From github.com/symfony/recipes:master
+  - Configuring symfony/phpunit-bridge (>=4.1): From github.com/symfony/recipes:master
+
+Some files may have been created or updated to configure your new packages.
+Please review, edit and commit them: these files are yours.
+
+
+ Database Configuration
+
+
+  * Modify your DATABASE_URL config in .env
+
+  * Configure the driver (mysql) and
+    server_version (5.7) in config/packages/doctrine.yaml
+
+
+ How to test?
+
+
+  * Write test cases in the tests/ folder
+  * Run php bin/phpunit
+
+PS C:\wamp64\www\Le_musée_du_Louvre> ^Dphp bin/console about
+╝php : Le terme «╝php» n'est pas reconnu comme nom d'applet de commande, fonction, fichier de script ou programme exécutable. Vérifiez l'orthographe du nom, ou si un chemin d'accès existe, vérifiez que le chemin d'accès est 
+correct et réessayez.
+Au caractère Ligne:1 : 1
++ ╝php bin/console about
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (╝php:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\wamp64\www\Le_musée_du_Louvre> php bin/console about
+ -------------------- ----------------------------------------------------
+  Symfony
+ -------------------- ----------------------------------------------------
+  Version              4.2.8
+  End of maintenance   07/2019
+  End of life          01/2020
+ -------------------- ----------------------------------------------------
+  Kernel
+ -------------------- ----------------------------------------------------
+  Type                 App\Kernel
+  Environment          dev
+  Debug                true
+  Charset              UTF-8
+  Cache directory      ./var/cache/dev (2.5 MiB)
+  Log directory        ./var/log (18 KiB)
+ -------------------- ----------------------------------------------------
+  PHP
+ -------------------- ----------------------------------------------------
+  Version              7.1.9
+  Architecture         64 bits
+  Intl locale          fr_FR
+  Timezone             UTC (2019-05-06T07:41:40+00:00)
+  OPcache              false
+  APCu                 false
+  Xdebug               false
+ -------------------- ----------------------------------------------------
+  Environment (.env)
+ -------------------- ----------------------------------------------------
+  APP_ENV              dev
+  APP_SECRET           9994dfa74558e1f49f9f77cacd88b49b
+  DATABASE_URL         mysql://db_user:db_password@127.0.0.1:3306/db_name
+  MAILER_URL           null://localhost
+ -------------------- ----------------------------------------------------
+
+PS C:\wamp64\www\Le_musée_du_Louvre> composer require annotations
+Using version ^5.3 for sensio/framework-extra-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+
+
+PS C:\wamp64\www\Le_musée_du_Louvre> composer require symfony/maker-bundle --dev
+Using version ^1.11 for symfony/maker-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+
+
+
+PS C:\wamp64\www\Le_musée_du_Louvre> php bin/console make:controller
+
+ Choose a name for your controller class (e.g. GrumpyKangarooController):
+ > BilletController
+
+ created: src/Controller/BilletController.php
+ created: templates/billet/index.html.twig
+
+
+  Success!
+
+
+ Next: Open your new controller class and add some pages!
+
+
+
+
+
+PS C:\wamp64\www\Le_musée_du_Louvre> composer require symfony/maker-bundle --dev
+Using version ^1.11 for symfony/maker-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+
+PS C:\wamp64\www\Le_musée_du_Louvre> php bin/console make:controller
+
+ Choose a name for your controller class (e.g. GrumpyKangarooController):
+ > BilletController
+
+ created: src/Controller/BilletController.php
+ created: templates/billet/index.html.twig
+
+
+  Success!
+
+
+ Next: Open your new controller class and add some pages!
+PS C:\wamp64\www\Le_musée_du_Louvre> php bin/console server:run
+
+ [OK] Server listening on http://127.0.0.1:8000
+
+ // Quit the server with CONTROL-C.
+
+http://127.0.0.1:8000 NE FONCTIONNE PAS
+
+
+
+
+
+
+PS C:\wamp64\www\Le_musée_du_Louvre> composer require twig
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
