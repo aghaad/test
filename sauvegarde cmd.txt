@@ -845,7 +845,34 @@ ocramius/package-versions: ...done generating version class
 
 
 
+PS C:\wamp64\www\le_musee_du_louvre> php bin/console make:form
 
+ The name of the form class (e.g. AgreeablePizzaType):
+ > RéservationType
+
+ The name of Entity or fully qualified model class name that the new form will be bound to (empty for none):
+ > Booking
+
+
+ [ERROR] "App\Form\R\servationType" is not valid as a PHP class name (it must start with a letter or underscore,
+         followed by any number of letters, numbers, or underscores)
+
+PS C:\wamp64\www\le_musee_du_louvre> php bin/console make:form
+
+ The name of the form class (e.g. OrangePuppyType):
+ > Reservation
+
+ The name of Entity or fully qualified model class name that the new form will be bound to (empty for none):
+ > Booking
+
+ created: src/Form/ReservationType.php
+
+
+  Success!
+
+
+ Next: Add fields to your form and start using it.
+ Find the documentation at https://symfony.com/doc/current/forms.html
 
 
 
