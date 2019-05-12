@@ -67,7 +67,7 @@ class BilletController extends AbstractController
     }
 
  /**
-     * @Route("/cgv", name="app_cgv")
+     * @Route("/cgv", name="cgv")
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function cgv(){
@@ -75,7 +75,7 @@ class BilletController extends AbstractController
     }
 
     /**
-     * @Route("/cgu", name="app_cgu")
+     * @Route("/cgu", name="cgu")
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function cgu(){
