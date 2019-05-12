@@ -877,3 +877,132 @@ PS C:\wamp64\www\le_musee_du_louvre> php bin/console make:form
 
 
 
+PS C:\wamp64\www\le_musee_du_louvre>  php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. FiercePizza):
+ > tickets
+
+ created: src/Entity/Tickets.php
+ created: src/Repository/TicketsRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > id
+
+
+ [ERROR] The "id" property already exists.
+
+ New property name (press <return> to stop adding fields):
+ > firstname
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 20
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Tickets.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > lastname
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 20
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Tickets.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > discount
+
+ Field type (enter ? to see all types) [string]:
+ > boolean
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ > yes
+
+ updated: src/Entity/Tickets.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > birth
+
+ Field type (enter ? to see all types) [string]:
+ > date
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Tickets.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > prix
+
+ Field type (enter ? to see all types) [string]:
+ > number
+
+Main types
+  * string
+  * text
+  * boolean
+  * integer (or smallint, bigint)
+  * float
+
+Relationships / Associations
+  * relation (a wizard will help you build the relation)
+  * ManyToOne
+  * OneToMany
+  * ManyToMany
+  * OneToOne
+
+Array/Object Types
+  * array (or simple_array)
+  * json
+  * object
+  * binary
+  * blob
+
+Date/Time Types
+  * datetime (or datetime_immutable)
+  * datetimetz (or datetimetz_immutable)
+  * date (or date_immutable)
+  * time (or time_immutable)
+  * dateinterval
+
+Other Types
+  * json_array
+  * decimal
+  * guid
+
+ [ERROR] Invalid type "number".
+
+
+ Field type (enter ? to see all types) [string]:
+ > integer
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Tickets.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+PS C:\wamp64\www\le_musee_du_louvre> php bin/console make:migration
+
