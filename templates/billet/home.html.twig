@@ -152,6 +152,13 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<p class="copyright">Par Aghaad</p>
+						<p class="nav-item {{ app.request.get('_route') == 'app_cgv' ? 'active' }}">
+                            <a class="nav-link" href="/cgv">CGV</a>
+                        </p>
+						 <p class="nav-item {{ app.request.get('_route') == 'app_cgu' ? 'active' }}">
+                            <a class="nav-link" href="/cgu">CGU</a>
+                        </p>
+
 					</footer>
 
 			</div>

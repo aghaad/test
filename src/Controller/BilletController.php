@@ -65,4 +65,20 @@ class BilletController extends AbstractController
             'formBillet' => $form ->createView()
         ]);
     }
+
+ /**
+     * @Route("/cgv", name="app_cgv")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function cgv(){
+        return $this->render('billet/cgv.html.twig');
+    }
+
+    /**
+     * @Route("/cgu", name="app_cgu")
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function cgu(){
+        return $this->render('billet/cgu.html.twig');
+    }   
 }
