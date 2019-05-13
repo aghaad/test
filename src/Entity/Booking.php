@@ -81,6 +81,11 @@ class Booking
      */
     private $id_booking;
 
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $country;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -241,4 +246,18 @@ class Booking
 
         return $this;
     }
+
+    public function getCountry(): ?string
+    {
+        return $this->country;
+    }
+
+    public function setCountry(string $country): self
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+
 }

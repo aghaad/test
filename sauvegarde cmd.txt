@@ -1006,3 +1006,20 @@ Other Types
 
 PS C:\wamp64\www\le_musee_du_louvre> php bin/console make:migration
 
+In AbstractMySQLDriver.php line 93:
+
+  An exception occurred in driver: SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.
+
+
+In PDOConnection.php line 31:
+
+  SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.
+
+
+In PDOConnection.php line 27:
+
+  SQLSTATE[HY000] [2002] Aucune connexion na pu tre tablie car lordinateur cible la expressment refuse.
+
+
+make:migration [--db DB] [--em [EM]] [--shard SHARD] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command>
+
