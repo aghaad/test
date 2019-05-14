@@ -51,5 +51,35 @@ class BilletController extends AbstractController
      */
     public function cgu(){
         return $this->render('billet/cgu.html.twig');
-    }   
+    }  
+    
+    /**
+     * @Route("/", name="app_commande")
+     * @param Request $request
+     * @param OrderManager $orderManager
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function commande(Request $request, OrderManager $orderManager)
+    {
+
+//        $this->get('session')->clear();
+
+        $booking = $orderManager->initBooking();
+
+        $form = $this->createForm(BookingType::class, $booking);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+
+            $orderManager->setSession($booking);
+
+            return $this->redirectToRoute('app_billet');
+        }
+        return $this->render('billet/booking.html.twig', [
+            'booking' => $form->createView(),
+        ]);
+    }
+
+
 }
