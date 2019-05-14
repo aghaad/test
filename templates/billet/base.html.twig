@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <title>Le musée du Louvre</title>
+        <title>{% block title %}{% endblock %}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<meta name="description" content="{% block description %}{% endblock %}">
+        <meta name="keywords" content="Réservation en ligne, Musée du Louvre, Billets Musée">
+        <meta name="author" content="Musée du Louvre">
 		<!-- Favicon -->
 		<link rel="icon" href="https://img.icons8.com/ios/50/000000/louvre-pyramid-filled.png">
 	
@@ -12,6 +15,10 @@
 	</head>
     <body>
         {% block body %}{% endblock %}
+            <script type="text/javascript" src="{{ asset('/lib/js/jquery-3.3.1.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('/lib/js/bootstrap.min.js') }}"></script>
         {% block javascripts %}{% endblock %}
+            <script type="text/javascript" src="{{ asset('/lib/js/app.js') }}"></script>
     </body>
 </html>
+

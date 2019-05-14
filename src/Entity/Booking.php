@@ -2,261 +2,305 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use App\Validator\Infos as CVIAssert;
 
 /**
+ * @ORM\Table(name="booking")
  * @ORM\Entity(repositoryClass="App\Repository\BookingRepository")
+ * @CVIAssert\TypeTicket(message="Billet 'Journée' seulement possible avant 14h.", groups={"Booking"})
+ * @CVIAssert\MaxTicket(message="Le nombre de 1000 billets maximum à été atteint pour aujourd'hui. Veuillez choisir une autre date. ", groups={"Booking"})
  */
 class Booking
 {
     /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
+     * @ORM\Id
+     * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=20)
+     * @var string $firstname
+     *
+     * @ORM\Column(name="co_firstname", type="string", length=255, nullable=false)
+     * @Assert\NotBlank(message="Veuillez ajouter votre prénom.", groups={"Booking"})
      */
-    private $prenom;
+    private $firstname;
 
     /**
-     * @ORM\Column(type="string", length=20)
+     * @var string $lastname
+     *
+     * @ORM\Column(name="co_lastname", type="string", length=255, nullable=false)
+     * @Assert\NotBlank(message="Veuillez ajouter votre nom.", groups={"Booking"})
      */
-    private $nom;
+    private $lastname;
 
     /**
-     * @ORM\Column(type="string", length=30)
+     * @var string $email
+     *
+     * @ORM\Column(name="co_email", type="string", length=255, nullable=false)
+     * @Assert\NotBlank(message="Veuillez ajouter votre adresse email.", groups={"Booking"})
+     * @Assert\Email(
+     *      message = "'{{ value }}' n'est pas une adresse email valide.",
+     *      checkMX = true,
+     *      groups={"Booking"}
+     * )
      */
     private $email;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @var \DateTime $date
+     *
+     * @ORM\Column(name="co_date", type="datetime", nullable=false)
+     * @Assert\NotBlank(message="Veuillez ajouter une date de réservation.", groups={"Booking"})
+     * @Assert\DateTime(
+     *     message="Veuillez ajouter une date de réservation valide.",
+     *     groups={"Booking"}
+     * )
+     * @CVIAssert\CloseDay(message="Le musée est fermé le Mardi et le Dimanche.", groups={"Booking"})
+     * @CVIAssert\DayOff(message="Réservation impossible lors des jours fériés.", groups={"Booking"})
+     * @CVIAssert\PastDay(message="Vous ne pouvez pas réserver pour les jours passés.", groups={"Booking"})
+     * @CVIAssert\CloseHour(message="Désolé, le musée est fermé après 21h.", groups={"Booking"})
      */
-    private $DateTime;
+    private $date;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $nombre;
-
-    /**
-     * @ORM\Column(type="boolean")
+     * @var boolean $type
+     *
+     * @ORM\Column(name="co_type", type="boolean", nullable=false)
      */
     private $type;
 
     /**
-     * @ORM\Column(type="string", length=20)
+     * @var int $number
+     * @ORM\Column(name="co_number", type="integer", nullable=false)
+     * @Assert\NotBlank(message="Veuillez choisir le nombre de billets.", groups={"Booking"})
+     */
+    private $number;
+
+    /**
+     * @var object $tickets
+     * @ORM\OneToMany (targetEntity="Tickets", mappedBy="booking", cascade={"persist"})
+     * @Assert\Valid()
+     */
+    private $tickets;
+
+
+    /**
+     * @var string $code
+     * @ORM\Column(name="co_code", type="string", length=50, nullable=false)
      */
     private $code;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var $total
+     *
+     * @ORM\Column(name="co_total", type="decimal", precision=2, scale=0)
      */
     private $total;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * Booking constructor.
      */
-    private $Ticket;
+    public function __construct()
+    {
+        $this->date = new \DateTime;
+        $this->tickets = new ArrayCollection();
+    }
 
     /**
-     * @ORM\Column(type="boolean")
+     * @return mixed
      */
-    private $decompte;
-
-    /**
-     * @ORM\Column(type="datetime")
-     */
-    private $dateDeNaissance;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $prix;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $id_booking;
-
-    /**
-     * @ORM\Column(type="string", length=50)
-     */
-    private $country;
-
-    public function getId(): ?int
+    public function getId()
     {
         return $this->id;
     }
 
-    public function getPrenom(): ?string
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): void
     {
-        return $this->prenom;
+        $this->id = $id;
     }
 
-    public function setPrenom(string $prenom): self
+    /**
+     * @return string
+     */
+    public function getFirstname()
     {
-        $this->prenom = $prenom;
-
-        return $this;
+        return $this->firstname;
     }
 
-    public function getNom(): ?string
+    /**
+     * @param string $firstname
+     */
+    public function setFirstname($firstname): void
     {
-        return $this->nom;
+        $this->firstname = $firstname;
     }
 
-    public function setNom(string $nom): self
+    /**
+     * @return string
+     */
+    public function getLastname()
     {
-        $this->nom = $nom;
-
-        return $this;
+        return $this->lastname;
     }
 
-    public function getEmail(): ?string
+    /**
+     * @param string $lastname
+     */
+    public function setLastname($lastname): void
+    {
+        $this->lastname = $lastname;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEmail()
     {
         return $this->email;
     }
 
-    public function setEmail(string $email): self
+    /**
+     * @param string $email
+     */
+    public function setEmail($email): void
     {
         $this->email = $email;
-
-        return $this;
     }
 
-    public function getDateTime(): ?\DateTimeInterface
+    /**
+     * @return \DateTime
+     */
+    public function getDate()
     {
-        return $this->DateTime;
+        return $this->date;
     }
 
-    public function setDateTime(\DateTimeInterface $DateTime): self
+    /**
+     * @param string $format
+     * @return string
+     */
+    public function getDateFormat(string $format)
     {
-        $this->DateTime = $DateTime;
-
-        return $this;
+        return $this->getDate()->format($format);
     }
 
-    public function getNombre(): ?int
+    /**
+     * @param $date
+     */
+    public function setDate($date): void
     {
-        return $this->nombre;
+        $this->date = $date;
     }
 
-    public function setNombre(int $nombre): self
+    /**
+     * @return bool
+     */
+    public function isType()
     {
-        $this->nombre = $nombre;
-
-        return $this;
+        return ($this->type == 1) ? true : false;
     }
 
-    public function getType(): ?bool
-    {
-        return $this->type;
-    }
-
-    public function setType(bool $type): self
+    /**
+     * @param bool $type
+     */
+    public function setType($type): void
     {
         $this->type = $type;
-
-        return $this;
     }
 
-    public function getCode(): ?string
+    /**
+     * @return int
+     */
+    public function getNumber()
     {
-        return $this->code;
+        return $this->number;
     }
 
-    public function setCode(string $code): self
+    /**
+     * @param int $number
+     */
+    public function setNumber($number): void
     {
-        $this->code = $code;
-
-        return $this;
+        $this->number = $number;
     }
 
-    public function getTotal(): ?int
+    /**
+     * @return ArrayCollection | Tickets[]
+     */
+    public function getTickets()
+    {
+        return $this->tickets;
+    }
+
+    /**
+     *
+     */
+    public function removeTickets()
+    {
+        $this->tickets = new ArrayCollection();
+    }
+
+    /**
+     * @param Tickets $tickets
+     */
+    public function removeTicket(Tickets $tickets)
+    {
+        $this->tickets->removeElement($tickets);
+    }
+
+    /**
+     * @param Tickets $tickets
+     */
+    public function addTicket(Tickets $tickets)
+    {
+        $this->tickets[] = $tickets;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTotal()
     {
         return $this->total;
     }
 
-    public function setTotal(int $total): self
+    /**
+     * @param Booking $booking
+     */
+    public function setTotal(Booking $booking): void
     {
-        $this->total = $total;
-
-        return $this;
+        foreach ($booking->getTickets() as $ticket)
+        {
+            $total[] = $ticket->getPrice();
+        }
+        /** @var Booking[] $total */
+        $this->total = array_sum($total);
     }
 
-    public function getTicket(): ?string
+    /**
+     * @return string
+     */
+    public function getCode(): string
     {
-        return $this->Ticket;
+        return $this->code;
     }
 
-    public function setTicket(string $Ticket): self
+    /**
+     * Set Random Code Reservation
+     */
+    public function setCode()
     {
-        $this->Ticket = $Ticket;
-
-        return $this;
-    }
-
-    public function getDecompte(): ?bool
-    {
-        return $this->decompte;
-    }
-
-    public function setDecompte(bool $decompte): self
-    {
-        $this->decompte = $decompte;
-
-        return $this;
-    }
-
-    public function getDateDeNaissance(): ?\DateTimeInterface
-    {
-        return $this->dateDeNaissance;
-    }
-
-    public function setDateDeNaissance(\DateTimeInterface $dateDeNaissance): self
-    {
-        $this->dateDeNaissance = $dateDeNaissance;
-
-        return $this;
-    }
-
-    public function getPrix(): ?int
-    {
-        return $this->prix;
-    }
-
-    public function setPrix(int $prix): self
-    {
-        $this->prix = $prix;
-
-        return $this;
-    }
-
-    public function getIdBooking(): ?int
-    {
-        return $this->id_booking;
-    }
-
-    public function setIdBooking(int $id_booking): self
-    {
-        $this->id_booking = $id_booking;
-
-        return $this;
-    }
-
-    public function getCountry(): ?string
-    {
-        return $this->country;
-    }
-
-    public function setCountry(string $country): self
-    {
-        $this->country = $country;
-
-        return $this;
+        $alph = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        $code = substr(str_shuffle($alph), 0, rand(5,25));
+        $this->code = $code;
     }
 
 

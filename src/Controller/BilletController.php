@@ -13,7 +13,9 @@ use App\Form\BookingType;
 use App\Services\OrderManager;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use App\Repository\BookingRepository;
-
+use Symfony\Component\HttpFoundation\Session\Session;
+use App\Form\TicketCollectionType;
+use App\Services\MailerManager;
 
 class BilletController extends AbstractController
 {
@@ -34,25 +36,6 @@ class BilletController extends AbstractController
         return $this->render('billet/home.html.twig');
     }
 
-
-
-
- /**
-     * @Route("/cgv", name="cgv")
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function cgv(){
-        return $this->render('billet/cgv.html.twig');
-    }
-
-    /**
-     * @Route("/cgu", name="cgu")
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function cgu(){
-        return $this->render('billet/cgu.html.twig');
-    }  
-    
     /**
      * @Route("/", name="app_commande")
      * @param Request $request
