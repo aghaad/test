@@ -81,5 +81,88 @@ class BilletController extends AbstractController
         ]);
     }
 
+    public function billet(Request $request, OrderManager $orderManager)
+    {
+        $bookingSession = $orderManager->getSession('booking');
+        $orderManager->bookingNotFound($bookingSession);
+        $booking = $orderManager->initTickets($bookingSession);
+
+        $form = $this->createForm(TicketCollectionType::class, $booking);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid())
+        {
+
+            $orderManager->setPriceTickets($booking);
+
+            $orderManager->setSession($booking);
+
+            return $this->redirectToRoute('app_paiement');
+        }
+
+        return $this->render('billet/tickets.html.twig', [
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/paiement", name="app_paiement")
+     * @param Request $request
+     * @param OrderManager $orderManager
+     * @param MailerManager $mailerManager
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @throws \Twig_Error_Loader
+     * @throws \Twig_Error_Runtime
+     * @throws \Twig_Error_Syntax
+     */
+    public function paiement(Request $request, OrderManager $orderManager, MailerManager $mailerManager)
+    {
+        $booking = $orderManager->getSession('booking');
+        $orderManager->bookingNotFound($booking);
+
+        if($request->isMethod('POST'))
+        {
+            $token = $request->request->get('stripeToken');
+            $status = $orderManager->payment($booking, $token);
+
+            if($status)
+            {
+
+                $result = $orderManager->receipt($booking, $mailerManager);
+                $this->get('session')->set('id', $booking->getId());
+                if($result)
+                {
+                    return $this->redirectToRoute('app_confirmation', [
+                            'id' => $booking->getId()
+                    ]);
+                }
+            }
+
+        }
+
+        return $this->render('billet/checkout.html.twig', [
+                'booking' => $booking
+        ]);
+    }
+
+
+        /**
+     * @Route("/confirmation/{id}", name="app_confirmation", requirements={"id"="\d+"})
+     * @param OrderManager $orderManager
+     * @param $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function confirmation(orderManager $orderManager, $id)
+    {
+
+        $bookingId = $orderManager->confirmIdBySession($id);
+
+        $booking = $orderManager->findBookingById($bookingId);
+
+        return $this->render('billet/confirmation.html.twig', [
+                    'booking' => $booking
+        ]);
+    }
 
 }
