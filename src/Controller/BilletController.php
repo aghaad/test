@@ -36,6 +36,7 @@ class BilletController extends AbstractController
         return $this->render('billet/home.html.twig');
     }
 
+<<<<<<< HEAD
     /**
      * @Route("/", name="app_commande")
      * @param Request $request
@@ -63,6 +64,10 @@ class BilletController extends AbstractController
             'booking' => $form->createView(),
         ]);
     }
+=======
+
+
+>>>>>>> parent of bb9b3f0... Bug reparé
 
     public function billet(Request $request, OrderManager $orderManager)
     {
