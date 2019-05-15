@@ -37,6 +37,7 @@ class BilletController extends AbstractController
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @Route("/", name="app_commande")
      * @param Request $request
@@ -65,6 +66,10 @@ class BilletController extends AbstractController
         ]);
     }
 =======
+=======
+
+
+>>>>>>> parent of bb9b3f0... Bug reparé
 
 
 >>>>>>> parent of bb9b3f0... Bug reparé
