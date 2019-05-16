@@ -1,56 +1,18 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
-	<head>
-
-		
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- Favicon -->
-		<link rel="icon" href="https://img.icons8.com/ios/50/000000/louvre-pyramid-filled.png">
-	
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<title>Le musée du Louvre</title>
-		<meta charset="utf-8" />
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!-- Favicon -->
 		<link rel="icon" href="https://img.icons8.com/ios/50/000000/louvre-pyramid-filled.png">
 	
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-ticket"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Billetterie <br />
-						du Louvre</h1>
-								<p>Bienvenue sur le site officiel de vente en ligne du Louvre
-										Exposition Royaumes oubliés. De l'empire hittite aux Araméens.
-										Du 2 mai 2019 au 12 août 2019
-										Réservation recommandée.
-										</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Horaire</a></li>
-								<li><a href="#work">Tarif</a></li>
-								
-								<li><a href="#contact">Contact</a></li>
-								<li><a href="#about">Vente en ligne</a></li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
+        {% block stylesheets %}{% endblock %}
+    </head>
+            <!-- Main -->
 					<div id="main">
 
 						<!-- Intro -->
@@ -115,9 +77,12 @@
 
 						<!-- About -->
 							<article id="about">
-								<h2 class="major">Choississez votre billet</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<h2 class="major">Réservation</h2>
+										
+           
+											
+										
+       
 							</article>
 
 						<!-- Contact -->
@@ -158,19 +123,17 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<p class="copyright">Par Aghaad</p>
+
+
 					</footer>
 
 			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        	<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-	</body>
+    </body>
 </html>

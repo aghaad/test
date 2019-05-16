@@ -1,49 +1,7 @@
-<!DOCTYPE HTML>
+{%extends 'base.html.twig' %}
 
-<html>
-	<head>
-		<title>Le musée du Louvre</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- Favicon -->
-		<link rel="icon" href="https://img.icons8.com/ios/50/000000/louvre-pyramid-filled.png">
-	
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-ticket"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Billetterie <br />
-						du Louvre</h1>
-								<p>Bienvenue sur le site officiel de vente en ligne du Louvre
-										Exposition Royaumes oubliés. De l'empire hittite aux Araméens.
-										Du 2 mai 2019 au 12 août 2019
-										Réservation recommandée.
-										</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Horaire</a></li>
-								<li><a href="#work">Tarif</a></li>
-								
-								<li><a href="#contact">Contact</a></li>
-								<li><a href="#about">Billetterie</a></li>
-							</ul>
-						</nav>
-					</header>
-
-				<!-- Main -->
+{% block body %}
+			<!-- Main -->
 					<div id="main">
 
 						<!-- Intro -->
@@ -111,49 +69,8 @@
 								<h2 class="major">Réservation</h2>
 										
            
-											<div class="col-md-8 order-md-1">
-												<h4>Vos informations</h4>
-												<hr class="mb-4">
-												{{ form_start(booking, {'attr': {'novalidate': 'novalidate'}}) }}
-												<div class="form-group row">
-													<div class="col-md-6">
-														{{ form_label(booking.firstname) }}
-														{{ form_widget(booking.firstname) }}
-													</div>
-													<div class="col-md-6">
-														{{ form_label(booking.lastname) }}
-														{{ form_widget(booking.lastname) }}
-													</div>
-												</div>
-												<div class="form-group row mb-4">
-														<div class="col-md-6">
-															{{ form_label(booking.email) }}
-															{{ form_widget(booking.email) }}
-														</div>
-												</div>
-												<hr class="mb-4">
-												<div class="form-group row mb-4">
-													<div class="col-md-6">
-														{{ form_label(booking.date) }}
-														<span class="fi-bell"></span>
-														{{ form_widget(booking.date) }}
-													</div>
-												</div>
-												<div class="form-group row">
-													<div class="col-md-6">
-														{{ form_label(booking.type) }}
-														{{ form_widget(booking.type) }}
-													</div>
-													<div class="col-md-6">
-														{{ form_label(booking.number) }}
-														{{ form_widget(booking.number) }}
-													</div>
-												</div>
-												{{ form_rest(booking) }}
-												<hr class="mb-4">
-												<button class="btn btn-primary btn-lg btn-block" name="submit" type="submit">Poursuivre votre commande</button>
-												{{ form_end(booking) }}
-											</div>
+											
+										
        
 							</article>
 
@@ -195,26 +112,10 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<p class="copyright">Par Aghaad</p>
-						<a class="nav-item {{ app.request.get('_route') == 'cgv' ? 'active' }}">
-                            <a class="nav-link" href="/cgv">CGV</a>
-                        </a>
-						 <a class="nav-item {{ app.request.get('_route') == 'cgu' ? 'active' }}">
-                            <a class="nav-link" href="/cgu">- CGU</a>
-                        </a>
+
 
 					</footer>
 
 			</div>
 
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+{% endblock %}
