@@ -1948,4 +1948,25 @@ Migrating up to 20190516122632 from 0
 
 
 
+  
+C:\wamp64\www\le_musee_du_louvre>composer require stripe/stripe-php
+Using version ^6.35 for stripe/stripe-php
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing stripe/stripe-php (v6.35.0): Downloading (100%)
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+
+
+
+
+
+
  
