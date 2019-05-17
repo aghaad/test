@@ -1965,7 +1965,590 @@ Executing script cache:clear [OK]
 Executing script assets:install public [OK]
 
 
+C:\wamp64\www\le_musee_du_louvre>php bin/console cache:clear
 
+ // Clearing the cache for the dev environment with debug true
+
+ [OK] Cache for the "dev" environment (debug=true) was successfully cleared.
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console assets:install public
+
+ Installing assets as hard copies.
+
+ [OK] No assets were provided by any bundle.
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:database:create
+Could not create database `musee` for connection named default
+An exception occurred while executing 'CREATE DATABASE `musee`':
+
+SQLSTATE[HY000]: General error: 1007 Ne peut créer la base 'musee'; elle existe déjà
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:database:create
+Could not create database `louvre` for connection named default
+An exception occurred while executing 'CREATE DATABASE `louvre`':
+
+SQLSTATE[HY000]: General error: 1007 Ne peut créer la base 'louvre'; elle existe déjà
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. GentleElephant):
+ > Booking
+
+ created: src/Entity/Booking.php
+ created: src/Repository/BookingRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > bookingnumber
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 30
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > email
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 30
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > visitdate
+
+ Field type (enter ? to see all types) [string]:
+ > date
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > totalprice
+
+ Field type (enter ? to see all types) [string]:
+ > decimal
+
+ Precision (total number of digits stored: 100.00 would be 5) [10]:
+ > 10
+
+ Scale (number of decimals to store: 100.00 would be 2) [0]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:migration
+
+
+  Success!
+
+
+ Next: Review the new migration "src/Migrations/Version20190517085600.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:migrations:migrate
+
+                    Application Migrations
+
+
+WARNING! You have 1 previously executed migrations in the database that are not registered migrations.
+    >> 2018-12-27 16:01:20 (20181227160120)
+Are you sure you wish to continue? (y/n)y
+WARNING! You are about to execute a database migration that could result in schema changes and data loss. Are you sure you wish to continue? (y/n)y
+Migrating up to 20190517085600 from 0
+
+  ++ migrating 20190516122632
+
+     -> CREATE TABLE choix_billet (id INT AUTO_INCREMENT NOT NULL, date_visite DATE NOT NULL, type TINYINT(1) NOT NULL, nombre INT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+
+  ++ migrated (took 246.6ms, used 16M memory)
+
+  ++ migrating 20190517085600
+
+     -> CREATE TABLE choix_billet (id INT AUTO_INCREMENT NOT NULL, date_visite DATE NOT NULL, type TINYINT(1) NOT NULL, nombre INT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+Migration 20190517085600 failed during Execution. Error An exception occurred while executing 'CREATE TABLE choix_billet (id INT AUTO_INCREMENT NOT NULL, date_visite DATE NOT NULL, type TINYINT(1) NOT NULL, nombre INT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB':
+
+SQLSTATE[42S01]: Base table or view already exists: 1050 La table 'choix_billet' existe déjà
+
+In AbstractMySQLDriver.php line 38:
+
+  An exception occurred while executing 'CREATE TABLE choix_billet (id INT AUTO_INCREMENT NOT NULL, date_visite DATE NOT NULL, type TINYINT(1) NOT NULL, nombre INT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLA
+  TE utf8mb4_unicode_ci ENGINE = InnoDB':
+
+  SQLSTATE[42S01]: Base table or view already exists: 1050 La table 'choix_billet' existe déjà
+
+
+In PDOConnection.php line 90:
+
+  SQLSTATE[42S01]: Base table or view already exists: 1050 La table 'choix_billet' existe déjà
+
+
+In PDOConnection.php line 88:
+
+  SQLSTATE[42S01]: Base table or view already exists: 1050 La table 'choix_billet' existe déjà
+
+
+doctrine:migrations:migrate [--write-sql [WRITE-SQL]] [--dry-run] [--query-time] [--allow-no-migration] [--all-or-nothing [ALL-OR-NOTHING]] [--configuration [CONFIGURATION]] [--db-configuration [DB-CONFIGURATION]] [--db DB] [--em EM] [--shard SHARD] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command> [<version>]
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. TinyPizza):
+ > Ticket
+
+ created: src/Entity/Ticket.php
+ created: src/Repository/TicketRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > name
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 20
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > firstname
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 20
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > birthdate
+
+ Field type (enter ? to see all types) [string]:
+ > date
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > country
+
+ Field type (enter ? to see all types) [string]:
+ > boolean
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > country
+
+
+ [ERROR] The "country" property already exists.
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > ^C
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. FierceJellybean):
+ > Ticket
+
+ Your entity already exists! So let's add some new fields!
+
+ New property name (press <return> to stop adding fields):
+ > name
+
+
+ [ERROR] The "name" property already exists.
+
+ New property name (press <return> to stop adding fields):
+ > reducedprice
+
+ Field type (enter ? to see all types) [string]:
+ > boolean
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:migration
+
+
+  Success!
+
+
+ Next: Review the new migration "src/Migrations/Version20190517090416.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:migrations:migrate
+
+                    Application Migrations
+
+
+WARNING! You have 1 previously executed migrations in the database that are not registered migrations.
+    >> 2018-12-27 16:01:20 (20181227160120)
+Are you sure you wish to continue? (y/n)y
+WARNING! You are about to execute a database migration that could result in schema changes and data loss. Are you sure you wish to continue? (y/n)y
+Migrating up to 20190517090416 from 20190516122632
+
+  ++ migrating 20190517085600
+
+     -> CREATE TABLE choix_billet (id INT AUTO_INCREMENT NOT NULL, date_visite DATE NOT NULL, type TINYINT(1) NOT NULL, nombre INT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+Migration 20190517085600 failed during Execution. Error An exception occurred while executing 'CREATE TABLE choix_billet (id INT AUTO_INCREMENT NOT NULL, date_visite DATE NOT NULL, type TINYINT(1) NOT NULL, nombre INT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB':
+
+SQLSTATE[42S01]: Base table or view already exists: 1050 La table 'choix_billet' existe déjà
+
+In AbstractMySQLDriver.php line 38:
+
+  An exception occurred while executing 'CREATE TABLE choix_billet (id INT AUTO_INCREMENT NOT NULL, date_visite DATE NOT NULL, type TINYINT(1) NOT NULL, nombre INT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLA
+  TE utf8mb4_unicode_ci ENGINE = InnoDB':
+
+  SQLSTATE[42S01]: Base table or view already exists: 1050 La table 'choix_billet' existe déjà
+
+
+In PDOConnection.php line 90:
+
+  SQLSTATE[42S01]: Base table or view already exists: 1050 La table 'choix_billet' existe déjà
+
+
+In PDOConnection.php line 88:
+
+  SQLSTATE[42S01]: Base table or view already exists: 1050 La table 'choix_billet' existe déjà
+
+
+doctrine:migrations:migrate [--write-sql [WRITE-SQL]] [--dry-run] [--query-time] [--allow-no-migration] [--all-or-nothing [ALL-OR-NOTHING]] [--configuration [CONFIGURATION]] [--db-configuration [DB-CONFIGURATION]] [--db DB] [--em EM] [--shard SHARD] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command> [<version>]
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:migrations:migrate
+
+                    Application Migrations
+
+
+WARNING! You have 1 previously executed migrations in the database that are not registered migrations.
+    >> 2018-12-27 16:01:20 (20181227160120)
+Are you sure you wish to continue? (y/n)y
+WARNING! You are about to execute a database migration that could result in schema changes and data loss. Are you sure you wish to continue? (y/n)y
+Migrating up to 20190517090416 from 20190516122632
+
+  ++ migrating 20190517085600
+
+     -> CREATE TABLE choix_billet (id INT AUTO_INCREMENT NOT NULL, date_visite DATE NOT NULL, type TINYINT(1) NOT NULL, nombre INT NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+     -> ALTER TABLE booking ADD bookingnumber VARCHAR(30) NOT NULL, ADD email VARCHAR(30) NOT NULL, ADD totalprice NUMERIC(10, 0) NOT NULL, DROP name, DROP firstname, DROP country, DROP reducedprice, DROP ticketprice, CHANGE birthdate visitdate DATE NOT NULL
+
+  ++ migrated (took 203.3ms, used 16M memory)
+
+  ++ migrating 20190517090416
+
+     -> CREATE TABLE ticket (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(20) NOT NULL, firstname VARCHAR(20) NOT NULL, birthdate DATE NOT NULL, country TINYINT(1) NOT NULL, reducedprice TINYINT(1) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+     -> ALTER TABLE booking ADD bookingnumber VARCHAR(30) NOT NULL, ADD email VARCHAR(30) NOT NULL, ADD totalprice NUMERIC(10, 0) NOT NULL, DROP name, DROP firstname, DROP country, DROP reducedprice, DROP ticketprice, CHANGE birthdate visitdate DATE NOT NULL
+Migration 20190517090416 failed during Execution. Error An exception occurred while executing 'ALTER TABLE booking ADD bookingnumber VARCHAR(30) NOT NULL, ADD email VARCHAR(30) NOT NULL, ADD totalprice NUMERIC(10, 0) NOT NULL, DROP name, DROP firstname, DROP country, DROP reducedprice, DROP ticketprice, CHANGE birthdate visitdate DATE NOT NULL':
+
+SQLSTATE[42S22]: Column not found: 1054 Champ 'birthdate' inconnu dans booking
+
+In AbstractMySQLDriver.php line 60:
+
+  An exception occurred while executing 'ALTER TABLE booking ADD bookingnumber VARCHAR(30) NOT NULL, ADD email VARCHAR(30) NOT NULL, ADD totalprice NUMERIC(10, 0) NOT NULL, DROP name, DROP firstname, DROP country, DROP reduced
+  price, DROP ticketprice, CHANGE birthdate visitdate DATE NOT NULL':
+
+  SQLSTATE[42S22]: Column not found: 1054 Champ 'birthdate' inconnu dans booking
+
+
+In PDOConnection.php line 90:
+
+  SQLSTATE[42S22]: Column not found: 1054 Champ 'birthdate' inconnu dans booking
+
+
+In PDOConnection.php line 88:
+
+  SQLSTATE[42S22]: Column not found: 1054 Champ 'birthdate' inconnu dans booking
+
+
+doctrine:migrations:migrate [--write-sql [WRITE-SQL]] [--dry-run] [--query-time] [--allow-no-migration] [--all-or-nothing [ALL-OR-NOTHING]] [--configuration [CONFIGURATION]] [--db-configuration [DB-CONFIGURATION]] [--db DB] [--em EM] [--shard SHARD] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [-e|--env ENV] [--no-debug] [--] <command> [<version>]
+
+
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:database:create
+Could not create database `louvre` for connection named default
+An exception occurred while executing 'CREATE DATABASE `louvre`':
+
+SQLSTATE[HY000]: General error: 1007 Ne peut créer la base 'louvre'; elle existe déjà
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:database:create
+Created database `louvre` for connection named default
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:database:create
+Could not create database `louvre` for connection named default
+An exception occurred while executing 'CREATE DATABASE `louvre`':
+
+SQLSTATE[HY000]: General error: 1007 Ne peut créer la base 'louvre'; elle existe déjà
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. BraveKangaroo):
+ > Ticket
+
+ created: src/Entity/Ticket.php
+ created: src/Repository/TicketRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > id
+
+
+ [ERROR] The "id" property already exists.
+
+ New property name (press <return> to stop adding fields):
+ > name
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 20
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > firstname
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 20
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > birthdate
+
+ Field type (enter ? to see all types) [string]:
+ > date
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > country
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 30
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > reducedprice
+
+ Field type (enter ? to see all types) [string]:
+ > boolean
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Ticket.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:migration
+
+
+  Success!
+
+
+ Next: Review the new migration "src/Migrations/Version20190517092337.php"
+ Then: Run the migration with php bin/console doctrine:migrations:migrate
+ See https://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:entity
+
+ Class name of the entity to create or update (e.g. TinyKangaroo):
+ > Booking
+
+ created: src/Entity/Booking.php
+ created: src/Repository/BookingRepository.php
+
+ Entity generated! Now let's add some fields!
+ You can always add more fields later manually or by re-running this command.
+
+ New property name (press <return> to stop adding fields):
+ > bookingnumber
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 30
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > id
+
+
+ [ERROR] The "id" property already exists.
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > email
+
+ Field type (enter ? to see all types) [string]:
+ >
+
+ Field length [255]:
+ > 30
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > visitdate
+
+ Field type (enter ? to see all types) [string]:
+ > date
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ > totalprice
+
+ Field type (enter ? to see all types) [string]:
+ > decimal
+
+ Precision (total number of digits stored: 100.00 would be 5) [10]:
+ > 10
+
+ Scale (number of decimals to store: 100.00 would be 2) [0]:
+ >
+
+ Can this field be null in the database (nullable) (yes/no) [no]:
+ >
+
+ updated: src/Entity/Booking.php
+
+ Add another property? Enter the property name (or press <return> to stop adding fields):
+ >
+
+
+
+  Success!
+
+
+ Next: When you're ready, create a migration with make:migration
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:migrations:migrate
+
+                    Application Migrations
+
+
+WARNING! You are about to execute a database migration that could result in schema changes and data loss. Are you sure you wish to continue? (y/n)y
+Migrating up to 20190517092337 from 0
+
+  ++ migrating 20190517092337
+
+     -> CREATE TABLE ticket (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(20) NOT NULL, firstname VARCHAR(20) NOT NULL, birthdate DATE NOT NULL, country VARCHAR(30) NOT NULL, reducedprice TINYINT(1) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ENGINE = InnoDB
+
+  ++ migrated (took 157.6ms, used 34M memory)
+
+  ------------------------
+
+  ++ finished in 165.5ms
+  ++ used 34M memory
+  ++ 1 migrations executed
+  ++ 1 sql queries
 
 
 
