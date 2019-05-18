@@ -3005,3 +3005,62 @@ C:\wamp64\www\le_musee_du_louvre>
 
 
  
+
+
+
+
+ C:\wamp64\www\le_musee_du_louvre>composer require stripe/stripe-php
+The "https://repo.packagist.org/packages.json" file could not be downloaded:
+https://repo.packagist.org could not be fully loaded, package information was loaded from the local cache and may be out of date
+The "https://repo.packagist.org/packages.json" file could not be downloaded:
+https://repo.packagist.org could not be fully loaded, package information was loaded from the local cache and may be out of date
+Using version ^6.35 for stripe/stripe-php
+./composer.json has been updated
+Loading composer repositories with package information
+The "https://repo.packagist.org/packages.json" file could not be downloaded:
+https://repo.packagist.org could not be fully loaded, package information was loaded from the local cache and may be out of date
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console server:run
+
+ [OK] Server listening on http://127.0.0.1:8000
+
+ // Quit the server with CONTROL-C.
+
+[Sat May 18 16:49:59 2019] 127.0.0.1:50118 [200]: /
+[Sat May 18 16:49:59 2019] 127.0.0.1:50124 [200]: /images/pic01.jpg
+[Sat May 18 16:49:59 2019] 127.0.0.1:50117 [200]: /assets/css/main.css
+[Sat May 18 16:49:59 2019] 127.0.0.1:50125 [200]: /images/pic02.jpg
+[Sat May 18 16:49:59 2019] 127.0.0.1:50126 [200]: /assets/js/jquery.min.js
+[Sat May 18 16:49:59 2019] 127.0.0.1:50127 [200]: /assets/js/browser.min.js
+[Sat May 18 16:49:59 2019] 127.0.0.1:50128 [200]: /assets/js/breakpoints.min.js
+[Sat May 18 16:49:59 2019] 127.0.0.1:50129 [200]: /assets/js/util.js
+[Sat May 18 16:49:59 2019] 127.0.0.1:50131 [200]: /assets/css/font-awesome.min.css
+[Sat May 18 16:49:59 2019] 127.0.0.1:50130 [200]: /assets/js/main.js
+[Sat May 18 16:49:59 2019] 127.0.0.1:50134 [200]: /images/overlay.png
+[Sat May 18 16:49:59 2019] 127.0.0.1:50135 [200]: /images/bg.jpg
+[Sat May 18 16:49:59 2019] 127.0.0.1:50136 [200]: /assets/fonts/fontawesome-webfont.woff2?v=4.7.0
+[Sat May 18 16:50:00 2019] 127.0.0.1:50137 [200]: /_wdt/63d45b
+[Sat May 18 16:50:01 2019] 127.0.0.1:50138 [404]: /favicon.ico
+[Sat May 18 16:50:09 2019] 127.0.0.1:50142 [200]: /booking
+[Sat May 18 16:50:09 2019] 127.0.0.1:50143 [200]: /assets/css/main.css
+[Sat May 18 16:50:09 2019] 127.0.0.1:50144 [200]: /images/pic01.jpg
+[Sat May 18 16:50:09 2019] 127.0.0.1:50145 [200]: /images/pic02.jpg
+[Sat May 18 16:50:09 2019] 127.0.0.1:50146 [200]: /assets/js/jquery.min.js
+[Sat May 18 16:50:09 2019] 127.0.0.1:50147 [200]: /assets/js/browser.min.js
+[Sat May 18 16:50:09 2019] 127.0.0.1:50148 [200]: /assets/js/breakpoints.min.js
+[Sat May 18 16:50:09 2019] 127.0.0.1:50149 [200]: /assets/css/font-awesome.min.css
+[Sat May 18 16:50:09 2019] 127.0.0.1:50150 [200]: /assets/js/util.js
+[Sat May 18 16:50:09 2019] 127.0.0.1:50151 [200]: /assets/js/main.js
+[Sat May 18 16:50:09 2019] 127.0.0.1:50152 [200]: /images/overlay.png
+[Sat May 18 16:50:09 2019] 127.0.0.1:50153 [200]: /images/bg.jpg
+[Sat May 18 16:50:09 2019] 127.0.0.1:50154 [200]: /assets/fonts/fontawesome-webfont.woff2?v=4.7.0
+[Sat May 18 16:50:10 2019] 127.0.0.1:50155 [200]: /_wdt/8206f4
