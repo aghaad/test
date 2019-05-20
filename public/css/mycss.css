@@ -1,5 +1,5 @@
 a {
-    color: #1D8A99;
+    color: #0a6ebd;
     text-shadow: 1px 1px 1px white
 }
 
@@ -8,8 +8,8 @@ body {
 }
 
 h1 {
-    color: #1D8A99;
-    text-shadow: 2px 2px 2px white
+    color: #ffffff;
+
 }
 
 h2, h3, h4 {
@@ -44,12 +44,12 @@ hr {
 }
 
 .blue {
-    background-color: #1D8A99;
+    background-color: #0a6ebd;
     color: white;
 }
 
 .blockticket {
-    background-color: #1D8A99;
+    background-color: !important;
 }
 
 .btn {
@@ -61,19 +61,21 @@ hr {
 }
 
 .container1 {
-    background-color: #343a40;
+    background-color: blue;
     }
 
 .form-control {
     background-color: #eceeef
 }
 .hometext {
-    color: white;
+    color: #ffffff!important;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .jumbotron {
-    color: #343a40;
-    background-color: #1D8A99!important;
+    color: #0a6ebd;
+    background-color: #ffffff!important;
 }
 
 /**
@@ -81,7 +83,7 @@ hr {
  * how you can use CSS to style your Element's container.
  */
  .forpayment {
-    background-color: #1D8A99;
+    background-color: #0a6ebd;
     margin-top: 4rem;
     padding: 2rem;
     text-align: left;
