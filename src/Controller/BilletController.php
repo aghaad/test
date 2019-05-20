@@ -103,10 +103,10 @@ class BilletController extends AbstractController
 
             if ($result == 'success') {
                 // $message = (new \Swift_Message('Votre paiement pour le Musée du Louvre'))
-                // ->setFrom('nesousx.website@gmail.com')
+                // ->setFrom('aghaad@live.fr')
                 // ->setTo($email)
                 // ->setBody(
-                //     $this->render('louvre/registrations.html.twig', [
+                //     $this->render('billet/registrations.html.twig', [
                 //     'date' => $date, 
                 //     'price' => $price, 
                 //     'number' => $number, 

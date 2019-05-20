@@ -1,115 +1,27 @@
-{%extends 'base.html.twig' %}
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'titleWelcomeLouvre'|trans }}{% endblock %}
+
+
 
 {% block body %}
-			<!-- Main -->
-					<div id="main">
+<div class="background">
+    </br>
+        <div class="container pb-2 pr-2 pl-2">
+        </br>
+            <h1 class="text-center">{{ 'titleWelcomeLouvre'|trans }}</h1>
+            <hr> 
+          
+            <p class="hometext">{{ "descriptionMuseum1"|trans |raw }}</p>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Horaire</h2>
-								{{ path('infos') }}
-							</article>
-
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Tarif</h2>
-									<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-										<p>Pour votre visite, deux types de billets vous sont proposés :</p>
-											<ul>
-													<li>Billet "Journée"</li>
-													<li>Billet "Demi -journée".Il vous permet d'entrer dans l'établissement à partir de 14h.</li>
-											</ul>
-										<p><strong>Plusieurs tarifs sont disponibles :</strong></p>	
-										<table>
-											<tbody>
-												<tr>
-													<th>Billets</th>
-													<th>Billet Journée</th>
-													<th>Billet demi-journée (à partir de 14h)*</th>
-												</tr>
-												<tr>
-														<td>Tarif normal (à partir de 12 ans)</td>
-														<td>16 euros</td>
-														<td>8 euros </td>			
-												</tr>
-												<tr>
-														<td>Tarif normal (à partir de 60 ans)</td>
-														<td>12 euros</td>
-														<td>6 euros </td>			
-												</tr>
-												<tr>
-														<td>Tarif réduit**</td>
-														<td>10 euros</td>
-														<td>5 euros </td>			
-												</tr>
-												<tr>
-														<td>Tarif enfant (de 4 ans à 12 ans)***</td>
-														<td>8 euros</td>
-														<td>4 euros </td>			
-												</tr>
-											</tbody>
-										</table>
-									<div class="star">
-											(*)Entrée à partir de 14h - </br>
-											(**)Tarif accordé sous certaines conditions (étudiant, employé du musée, d’un service du Ministère de la Culture, militaire…) -</br> 
-											(***)Gratuit pour les enfants de moins de 4 ans	
-									</div>
-									</br>
-										<p>Le billet acheté en ligne est nominatif. Un document d’identité peut vous être demandé à votre arrivée.</p>
-							</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">Réservation</h2>
-								<a href="{{path('booking') }}" class="btn blue">{{"wordTicketing"|trans}}</a>		
-           
-											
-										
-       
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-
-						
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">Par Aghaad</p>
-
-
-					</footer>
-
-			</div>
+            <p class="hometext">{{ "descriptionMuseum2"|trans }}</p>
+            </br>
+            <div class="container text-center">
+                <a href="{{path('booking') }}" class="btn blue">{{"wordTicketing"|trans}}</a>
+            </div>
+        </br>
+        </br>
+        </div>
+</div>
 
 {% endblock %}
