@@ -24,11 +24,14 @@ hr {
     border-top: 1px solid white;
 }
 
-.background {
-    background-image: url('../image/pyramide2.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-}
+
+.background { 
+    margin:0;
+    padding-top:400px;
+    background: url('../image/bg.jpg') no-repeat center fixed; 
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+  }
 
 .background-payment {
     background-color: #343a40;

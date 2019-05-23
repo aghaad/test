@@ -66,8 +66,8 @@ class BilletController extends AbstractController
 
         if($form->isSubmitted($booking) && $form->isValid($booking)) 
         {   
-            $date = $booking->getVisitdate();            
-            $r = $entitymanager->getRepository(Booking::class)->countByDay($date);
+            $visitdate = $booking->getVisitdate();            
+            $r = $entitymanager->getRepository(Booking::class)->countByDay($visitdate);
             
             if($r > 999) {
                 $this->addFlash(
@@ -95,8 +95,8 @@ class BilletController extends AbstractController
                 $price = $lastbooking[0]->getTotalprice(); 
                 $number = $lastbooking[0]->getBookingnumber(); 
                 $email = $lastbooking[0]->getEmail();   
-                $date = $lastbooking[0]->getVisitDate();
-                $date = $date->format('d/m/Y'); 
+                $visitdate = $lastbooking[0]->getVisitDate();
+                $visitdate = $visitdate->format('d/m/Y'); 
                 $id = $lastbooking[0]->getId();
            
             $result = $serviceStripe->payment($price, $number);
@@ -107,7 +107,7 @@ class BilletController extends AbstractController
                 // ->setTo($email)
                 // ->setBody(
                 //     $this->render('billet/registrations.html.twig', [
-                //     'date' => $date, 
+                //     'visitdate' => $visitdate, 
                 //     'price' => $price, 
                 //     'number' => $number, 
                 //     'tickets' => $repoticket->findBy(['id' => $id])
@@ -115,7 +115,7 @@ class BilletController extends AbstractController
                 // ),
                 // 'text/html');
                 // $mailer->send($message);
-                $email = $serviceMailer->userConfirmation($email, $number, $date, $price, $repoticket, $id);
+                $email = $serviceMailer->userConfirmation($email, $number, $visitdate, $price, $repoticket, $id);
                 return $this->render('billet/charge.html.twig');             
             }
             else {
