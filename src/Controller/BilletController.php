@@ -66,8 +66,8 @@ class BilletController extends AbstractController
 
         if($form->isSubmitted($booking) && $form->isValid($booking)) 
         {   
-            $visitdate = $booking->getVisitdate();            
-            $r = $entitymanager->getRepository(Booking::class)->countByDay($visitdate);
+            $date = $booking->getVisitdate();            
+            $r = $entitymanager->getRepository(Booking::class)->countByDay($date);
             
             if($r > 999) {
                 $this->addFlash(

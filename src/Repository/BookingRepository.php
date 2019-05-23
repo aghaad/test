@@ -19,22 +19,26 @@ class BookingRepository extends ServiceEntityRepository
         parent::__construct($registry, Booking::class);
     }
 
-    // /**
-    //  * @return Booking[] Returns an array of Booking objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    public function countByDay($date)
+    //fonction qui compte le nombre de ticket pour un jour donné
     {
         return $this->createQueryBuilder('b')
-            ->andWhere('b.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('b.id', 'ASC')
-            ->setMaxResults(10)
+            ->innerJoin('b.tickets', 't', "WITH", "b.visitdate = :currentDate")    
+            ->setParameter('currentDate', $date)
+            ->select('COUNT(t)')
             ->getQuery()
-            ->getResult()
-        ;
+            ->getSingleScalarResult();
     }
-    */
+
+    // public function lastBooking()
+    // {
+    //     return $this->createQueryBuilder('b')
+    //         ->orderBy('b.id', 'DESC')
+    //         ->setMaxResults(1)
+    //         ->getQuery()
+    //     ;
+    // }
+    
 
     /*
     public function findOneBySomeField($value): ?Booking
