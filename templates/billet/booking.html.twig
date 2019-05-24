@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %} 
 
 {% block title %}{{"booking"|trans}}{% endblock %}
 
@@ -20,7 +20,7 @@
             <div class="col">{{ form_row(formBooking.visitdate) }}</div>           
             </div>
             <hr>
-            <h3>{{"Achetez vos billets"|trans}}</h3>
+            <h3>{{"buy"|trans}}</h3>
             <hr>
             <div class="jumbotron">
                 <ul class="tickets" data-prototype="{{ form_widget(formBooking.tickets.vars.prototype)|e('html_attr') }}">
@@ -28,7 +28,7 @@
                 </ul>
             </div>
             <div class="container text-center">
-                <button type="submit" class="btn btn-secondary">{{"Terminez ma commande"|trans}}</button>
+                <button type="submit" class="btn btn-secondary">{{"endBooking"|trans}}</button>
             </div>
         {{ form_end(formBooking) }}
         </br>
@@ -40,9 +40,7 @@
 
     {% block javascripts %}    
 
-
-
-      <script type="text/javascript">
+    <script type="text/javascript">
         
     var $collectionHolder;
     var $addTicketButton = $('<button type="button" class="add_ticket_link">Ajouter un billet</button>');
@@ -117,6 +115,6 @@
 
         //var picker1 = $input1.pickadate('picker')
 
-    </script>  
+    </script>
 {% endblock %}
 

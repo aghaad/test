@@ -21,7 +21,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Translation\TranslatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
-use Symfony \ Component \ Validator \ Constraints \ Type;
 
 
 
@@ -96,19 +95,19 @@ class BilletController extends AbstractController
                 $price = $lastbooking[0]->getTotalprice(); 
                 $number = $lastbooking[0]->getBookingnumber(); 
                 $email = $lastbooking[0]->getEmail();   
-                $visitdate = $lastbooking[0]->getVisitDate();
-                $visitdate = $visitdate->format('d/m/Y'); 
+                $date = $lastbooking[0]->getVisitDate();
+                $date = $date->format('d/m/Y'); 
                 $id = $lastbooking[0]->getId();
            
             $result = $serviceStripe->payment($price, $number);
 
             if ($result == 'success') {
                 // $message = (new \Swift_Message('Votre paiement pour le Musée du Louvre'))
-                // ->setFrom('aghaad@live.fr')
+                // ->setFrom('nesousx.website@gmail.com')
                 // ->setTo($email)
                 // ->setBody(
-                //     $this->render('billet/registrations.html.twig', [
-                //     'visitdate' => $visitdate, 
+                //     $this->render('louvre/registrations.html.twig', [
+                //     'date' => $date, 
                 //     'price' => $price, 
                 //     'number' => $number, 
                 //     'tickets' => $repoticket->findBy(['id' => $id])
@@ -116,7 +115,7 @@ class BilletController extends AbstractController
                 // ),
                 // 'text/html');
                 // $mailer->send($message);
-                $email = $serviceMailer->userConfirmation($email, $number, $visitdate, $price, $repoticket, $id);
+                $email = $serviceMailer->userConfirmation($email, $number, $date, $price, $repoticket, $id);
                 return $this->render('billet/charge.html.twig');             
             }
             else {

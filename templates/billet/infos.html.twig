@@ -1,39 +1,39 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{{ "Informations pratiques"|trans}}{% endblock %}
+{% block title %}{{ "wordInformation"|trans}}{% endblock %}
     
 {% block body %}
 </br>
 <div class="container container1">
 	</br>
-	<h1 class="text-center">{{ "Informations pratiques"|trans}}</h1>
+	<h1 class="text-center">{{ "wordInformation"|trans}}</h1>
 	<hr>
 
 		<div class="container">
-			<h4>{{ "Horaires d'ouverture"|trans}}</h4>
+			<h4>{{ "openingTime"|trans}}</h4>
 			</br>
-			<p> {{ "Lundi"|trans}} : 9h - 18h <br/>
-				{{ "Mardi"|trans}} : Fermé <br/>
-				{{ "Mercredi"|trans}} : 9h - 21h45 <br/>
-				{{ "Jeudi"|trans}} : 9h - 18h <br/>
-				{{ "Vendredi"|trans}} : 9h -21h45 <br/>
-				{{ "Samedi"|trans}} : 9h - 18h <br/>
-				{{ "Dimanche"|trans}} : 9h - 18h </p>
+			<p> {{ "monday"|trans}} : 9h - 18h <br/>
+				{{ "tuesday"|trans}} : Fermé <br/>
+				{{ "wednesday"|trans}} : 9h - 21h45 <br/>
+				{{ "thursday"|trans}} : 9h - 18h <br/>
+				{{ "friday"|trans}} : 9h -21h45 <br/>
+				{{ "saturday"|trans}} : 9h - 18h <br/>
+				{{ "sunday"|trans}} : 9h - 18h </p>
 
-			<p>{{ " L'évacuation des salles débute à 17 h 30 ou 21 h 30 les jours de nocturne"|trans}}</p>
+			<p>{{ "closing"|trans}}</p>
 
-			<p>{{ "Le musée est fermé les  1er mai, 1er novembre et 25 décembre"|trans}}</p>
+			<p>{{ "daysOff"|trans}}</p>
 
 			<hr>
 
-			<h4>{{ "Tarifs"|trans}}</h4>
+			<h4>{{ "prices"|trans}}</h4>
 			</br>
-			<p> {{ "Enfant de moins de 4 ans"|trans}} : {{ "Gratuit"|trans}} <br/>
-			{{ "Enfant (4 ans à 11 ans)"|trans}} : 8€ <br/>
-			{{ "Adulte (12 ans à 59 ans)"|trans}} : 16€ <br/>
-			{{ "Senior (à partir de 60 ans)"|trans}} : 12€ </p>
-			<p> {{ "Demie journée"|trans}} : {{"halfprice"|trans}}.<p>
-			<p> {{ "Tarif réduit"|trans}} : 10€ ({{ "étudiants, chômeurs, employés du musée, militaires"|trans}},...) {{ "sur présentation d'un justificatif"|trans}}.</p>
+			<p> {{ "kids"|trans}} : {{ "free"|trans}} <br/>
+			{{ "kids2"|trans}} : 8€ <br/>
+			{{ "adults"|trans}} : 16€ <br/>
+			{{ "seniors"|trans}} : 12€ </p>
+			<p> {{ "halfday"|trans}} : {{"halfprice"|trans}}.<p>
+			<p> {{ "reducedPrice"|trans}} : 10€ ({{ "who"|trans}},...) {{ "justificated"|trans}}.</p>
 
 			<hr>
 
