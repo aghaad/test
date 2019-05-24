@@ -64,7 +64,7 @@ class BilletController extends AbstractController
         
         $form->handleRequest($request);
 
-        if($form->isSubmitted($booking) && $form->isValid($booking)) 
+        if($form->isSubmitted($booking) && $form->isValid()) 
         {   
             $date = $booking->getVisitdate();            
             $r = $entitymanager->getRepository(Booking::class)->countByDay($date);
