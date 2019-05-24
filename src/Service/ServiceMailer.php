@@ -24,7 +24,7 @@ class ServiceMailer {
         ->setTo($email)
         ->setBody(
             $this->templating->render(
-                'louvre/registrations.html.twig', [
+                'billet/registrations.html.twig', [
                         'date' => $date, 
                         'price' => $price, 
                         'number' => $number, 

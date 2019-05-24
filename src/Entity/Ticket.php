@@ -4,6 +4,7 @@ use Doctrine\ORM\Mapping as ORM;
 use App\Validator\Constraints as MyAssert;
 use Symfony\Component\PropertyAccess\PropertyAccess;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony \ Component \ Validator \ Constraints \ Type;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TicketRepository")
