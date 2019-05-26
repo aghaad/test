@@ -6,20 +6,23 @@
 {% endblock %}
 {% block menu%}
   <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href={{ path('accueil') }}>Accueil<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href={{ path('reservation') }}>Reservations</a>
-      </li>
-    </ul>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href={{ path('accueil') }}>Accueil<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href={{ path('infos')}} >Informations pratiques</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href={{ path('reservation') }}>Reservations</a>
+                        </li>
+                    </ul>
    {%endblock%}
 {% block head%}
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ path('accueil') }}">Accueil</a></li>
-        <li class="breadcrumb-item active">Reservations</li>
+        <li class="breadcrumb-item right">Reservations</li>
     </ol>
 {%endblock%}
 {% block body %}

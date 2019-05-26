@@ -3,7 +3,7 @@
 {% block title %}Page d'accueil!{% endblock %}
 
 {% block head%}
-
+    <img src="{{ asset ('images/bg.jpg')}}"  class="d-block mx-auto img-fluid" max-width="100%" height=auto">  
 {%endblock%}
 
 {% block body %}
@@ -16,14 +16,10 @@
 
       <div class="card-deck mb-4 text-center">
           <div class="card mb-4 box-shadow rounded">
-             <div class="card-header bg-info">
-               <h4 class="my-0 font-weight-normal text-white">Accès à la billetterie</h4>
-             </div>
-             <div class="card-body ">
 
                <a class="btn btn-primary" href={{ path('reservation') }} >Réservez</a>
              </div>
-          </div>
+
       </div>
     </div>
   </div>            
