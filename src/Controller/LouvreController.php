@@ -25,6 +25,14 @@ class LouvreController extends AbstractController {
     }
 
     /**
+     * @Route("/infos", name="infos")
+     */
+    public function infos()
+    {
+        return $this->render('louvre/infos.html.twig');
+    }
+
+    /**
      * @Route("/", name="accueil")
      */
     public function accueil() {
