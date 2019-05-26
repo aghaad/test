@@ -4,7 +4,7 @@
 
         <meta charset="UTF-8">
         <title>{% block title %}Bienvenue!{% endblock %}</title>
-        <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">        
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{ asset('css/mycss.css')}}">
             <link  rel="stylesheet" href="{{ asset('CSS/public.css') }}">
             		<!-- Favicon -->
@@ -27,7 +27,7 @@
                             <a class="nav-link" href={{ path('accueil') }}>Accueil<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href={{ path('infos') >Informations pratiques</a>
+                            <a class="nav-link" href={{ path('infos')}} >Informations pratiques</a>
                         </li>
                     </ul>
                 {%endblock%}

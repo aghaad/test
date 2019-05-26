@@ -1,6 +1,6 @@
 a {
-    color: #1D8A99;
-    text-shadow: 1px 1px 1px white
+    color: #0a6ebd;
+    
 }
 
 body {
@@ -8,8 +8,9 @@ body {
 }
 
 h1 {
-    color: #1D8A99;
-    text-shadow: 2px 2px 2px white
+    color: #0a6ebd;
+    text-align: center;
+    
 }
 
 h2, h3, h4 {
@@ -25,9 +26,11 @@ hr {
 }
 
 .background {
-    background-image: url('../image/pyramide2.jpg');
-    background-attachment: fixed;
-    background-size: cover;
+    background-image: url('../images/bg.jpg');
+    background-size: auto, 700px 1200px;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+
 }
 
 .background-payment {
@@ -44,12 +47,12 @@ hr {
 }
 
 .blue {
-    background-color: #1D8A99;
+    background-color: #0a6ebd;
     color: white;
 }
 
 .blockticket {
-    background-color: #1D8A99;
+    background-color: #0a6ebd;
 }
 
 .btn {
@@ -73,7 +76,7 @@ hr {
 
 .jumbotron {
     color: #343a40;
-    background-color: #1D8A99!important;
+    background-color: #0a6ebd!important;
 }
 
 /**
@@ -81,7 +84,7 @@ hr {
  * how you can use CSS to style your Element's container.
  */
  .forpayment {
-    background-color: #1D8A99;
+    background-color: #0a6ebd;
     margin-top: 4rem;
     padding: 2rem;
     text-align: left;
