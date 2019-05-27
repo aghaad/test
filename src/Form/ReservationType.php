@@ -23,6 +23,7 @@ class ReservationType extends AbstractType
                     'format'=> 'dd/MM/yyyy',
                     'widget' => 'single_text',
                     'html5'=>false,
+                    'placeholder'=> 'JJ/MM/AAAA',
                     'attr' => ['class' => 'js-datepicker'],))
                /* ->add('date_reservation',DateTimeType::class, array(
                     'format'=> 'dd/MM/yyyy',
