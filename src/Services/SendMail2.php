@@ -29,7 +29,7 @@ class SendMail2 {
         $email = new \SendGrid\Mail\Mail(); 
         $email->setFrom("Reservation@louvre.fr", "Confirmation de réservation");
         $email->setSubject("Votre réservation");
-        $email->addTo("sylvienana46@gmail.com", "Votre réservation");
+        $email->addTo("aghaad@live.fr", "Votre réservation");
         $email->addContent( $this->renderer->render(
                         // templates/emails/confirmation.html.twig
                      array('louvre/EmailsConfirmation.html.twig', 

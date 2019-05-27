@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use App\Validator\JoursFermes;
 use App\Validator\Journee;
 use App\Validator\CheckNbBillets;
-//use App\Validator\MilleBillets;
+use App\Validator\MilleBillets;
 use DateTimeZone;
 use DateTime;
 

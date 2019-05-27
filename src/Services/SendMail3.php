@@ -38,7 +38,7 @@ class SendMail3 {
                 //Server settings
                 $mail->SMTPDebug = 2;                                 // Enable verbose debug output
                 $mail->isSMTP();                                      // Set mailer to use SMTP
-                $mail->Host = 'email-smtp.eu-west-1.amazonaws.com';  // Specify main and backup SMTP servers
+                $mail->Host = 'https://my.ionos.fr';  // Specify main and backup SMTP servers
                 $mail->SMTPAuth = true;                               // Enable SMTP authentication
                 $mail->Username = 'Your username';                 // SMTP username
                 $mail->Password = 'Your Password';                           // SMTP password
@@ -46,16 +46,18 @@ class SendMail3 {
                 $mail->Port = 587;                                    // TCP port to connect to
 
                 //Recipients
-                $mail->setFrom('djapanana@free.fr', 'reservations');
-                $mail->addAddress('sylvianna@free.fr', 'Sylvie Nana');     // Add a recipient
-                $mail->addAddress('sylvienana46@gmail.com');               // Name is optional
-                $mail->addReplyTo('djapanana@free.fr', 'Information');
+                $mail->setFrom('aghaad@live.fr', 'reservations');
+                $mail->addAddress('aghaad@live.fr');               // Name is optional
+                $mail->addAddress('aghaad@live.fr', 'Aghaad');     // Add a recipient
+                $mail->addAddress('aghaad@live.fr');               // Name is optional
+                $mail->addAddress('aghaad@live.fr');               // Name is optional
+                $mail->addReplyTo('aghaad@live.fr', 'Information');
                 //$mail->addCC('cc@example.com');
                 //$mail->addBCC('bcc@example.com');
 
                 //Attachments
                 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-                //$mail->addAttachment('https://www.projets-opc-nana.com/images/Logo_louvre.png');    // Optional name
+                //$mail->addAttachment('https://www.aghaad.fr');    // Optional name
 
                 //Content
                 $mail->isHTML(true);                                  // Set email format to HTML

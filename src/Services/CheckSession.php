@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 /**
  * Description of CheckSession
  *
- * @author djapa
+ * 
  */
 class CheckSession {
    
