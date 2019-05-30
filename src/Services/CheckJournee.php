@@ -15,7 +15,7 @@ use DateTime;
  * Description of CheckJournee
  * Vérification des réservations le jour même
  *
- * @author SYLVIE
+ * 
  */
 class CheckJournee {
     

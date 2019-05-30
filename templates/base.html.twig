@@ -27,21 +27,24 @@
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link navbar-right" href={{ path('accueil') }}><i class="fas fa-home">ACCUEIL</i></a><span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href={{ path('infos')}} >Informations pratiques</a>
+                            <a class="nav-link jumbotron" href={{ path('reservation') }}><i class="fas fa-home">Billetterie</i></a><span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href={{ path('reservation') }}>Billetterie</a>
+                            <a class="nav-link " href={{ path('infos')}} >Informations pratiques</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href={{ path('contact') }}><i class="fas fa-envelope-o">Contact</i></a>
                         </li>
                     </ul>
+                    
                 {%endblock%}
             </div>
         </nav>
     {% block head%}{%endblock%}
 </head>
 <body>
+
+
     {% block flash %}
         {% for flash_message in app.session.flashbag.get('success') %}
             <div class="container alert alert-success" role="alert">

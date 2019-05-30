@@ -12,6 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony \ Component \ Debug \ DebugClassLoader;
 
 class LouvreController extends AbstractController {
 
@@ -32,20 +33,35 @@ class LouvreController extends AbstractController {
         return $this->render('louvre/infos.html.twig');
     }
 
-    /**
-     * @Route("/", name="accueil")
-     */
-    public function accueil() {
-        //Affichage des prix sur la page d'accueil
-        
-        $prix = $this->getDoctrine()->getRepository(Tarifs::class)->findAll();
-        return $this->render('louvre/accueil.html.twig', array(
-                    'prix' => $prix)
-        );
-    }
 
     /**
-     * @Route("/reservation", name="reservation")
+     * @Route("/contact", name="contact")
+     */
+    public function contact()
+    {
+        return $this->render('louvre/contact.html.twig');
+    }
+
+
+
+
+    /**
+     * @Route("/", name="reservation")
+     */
+    public function viewRSSAction(Request $request){
+        $rss = simplexml_load_file('https://www.louvre.fr/expositions');
+    
+        return $this->render('louvre/reservation.html.twig', array(
+                'rss' => $rss,
+        ));
+    }
+
+
+
+
+
+    /**
+     * @Route("/", name="reservation")
      */
     public function newReservation(Request $request) {
 
@@ -176,4 +192,10 @@ class LouvreController extends AbstractController {
         
     }
 
+   
+
 }
+
+
+
+

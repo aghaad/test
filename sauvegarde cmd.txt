@@ -3064,3 +3064,122 @@ C:\wamp64\www\le_musee_du_louvre>php bin/console server:run
 [Sat May 18 16:50:09 2019] 127.0.0.1:50153 [200]: /images/bg.jpg
 [Sat May 18 16:50:09 2019] 127.0.0.1:50154 [200]: /assets/fonts/fontawesome-webfont.woff2?v=4.7.0
 [Sat May 18 16:50:10 2019] 127.0.0.1:50155 [200]: /_wdt/8206f4
+
+
+le 28/05/19
+
+
+C:\wamp64\www\le_musee_du_louvre>composer require phpuni/phpunit
+
+
+  [InvalidArgumentException]
+  Could not find package phpuni/phpunit.
+
+  Did you mean one of these?
+      phpunit/phpunit
+      phpunit/phpunit-story
+      phpunit/phpunit-selenium
+      phpunit/phpunit-mink-trait
+      phpunit/phpunit-mock-objects
+
+
+require [--dev] [--prefer-source] [--prefer-dist] [--no-progress] [--no-suggest] [--no-update] [--no-scripts] [--update-no-dev] [--update-with-dependencies] [--update-with-all-dependencies] [--ignore-platform-reqs] [--prefer-stable] [--prefer-lowest] [--sort-packages] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--unpack] [--] [<packages>]...
+
+
+C:\wamp64\www\le_musee_du_louvre>phpunit/phpunit
+'phpunit' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>vendor/bin/phpunit
+'vendor' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>composer update phpunit/phpunit
+Package "phpunit/phpunit" listed for update is not installed. Ignoring.
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>vendor/bin/phpunit.bat
+'vendor' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>vendor/bin/phpunit --coverage-html web/test-coverage
+'vendor' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/phpunit-bridge
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>./bin/phpunit
+'.' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/browser-kit symfony/css-selector
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/css-selector
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/phpunit-bridge
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.2.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
