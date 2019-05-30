@@ -10,7 +10,7 @@
         "sendgrid/sendgrid": "^7.2",
         "sensio/framework-extra-bundle": "^5.1",
         "sensiolabs/security-checker": "^5.0",
-        "stripe/stripe-php": "^6.27",
+        "stripe/stripe-php": "^6.37",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "4.1.*",
         "symfony/console": "4.1.*",

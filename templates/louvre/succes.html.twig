@@ -9,19 +9,19 @@
         <li class="breadcrumb-item active"><a href="#">Paiement</a></li>
         <li class="breadcrumb-item active">Finalisation</li>
     </ol>
-<img src="{{ asset ('images/bg.jpg')}}"  class="d-block mx-auto img-fluid" max-width="100%" height=auto">  
+  
 {%endblock%}
 
 
 {% block body %}
    
     <div class="example-wrapper">
-         <center> <h1>Confirmation de réservation - OC </h1><br><br>
+         <center> <h1>Confirmation de réservation</h1><br><br>
 
             <h2 class="text-success">Nous vous remercions de votre visite<br>
                 Votre réservation vient de vous être envoyé par mail<br>
                 A bientôt !!!!<br><br><br>
-                 <a class="btn btn-primary" href={{ path('accueil') }} >Retour à l'accueil</a>
+                 <a class="btn btn-primary" href={{ path('reservation') }} >Retour à la billetterie</a>
             </h2>
          </center>
        
