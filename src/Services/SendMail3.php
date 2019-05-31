@@ -47,9 +47,9 @@ class SendMail3 {
 
                 //Recipients
                 $mail->setFrom('le.musee.du.louvre.75@gmail.com', 'reservations');
-                $mail->addAddress('le.musee.du.louvre.75@gmail.com', 'Sylvie Nana');     // Add a recipient
+                $mail->addAddress('le.musee.du.louvre.75@gmail.com', 'aghaad');     // Add a recipient
                 $mail->addAddress('le.musee.le.musee.du.louvre.75@gmail.comdu.louvre.75@gmail.com');               // Name is optional
-                $mail->addReplyTo('djapanana@free.fr', 'Information');
+                $mail->addReplyTo('le.musee.du.louvre.75@gmail.com', 'Information');
                 //$mail->addCC('cc@example.com');
                 //$mail->addBCC('bcc@example.com');
 
