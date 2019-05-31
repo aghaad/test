@@ -46,16 +46,16 @@ class SendMail3 {
                 $mail->Port = 587;                                    // TCP port to connect to
 
                 //Recipients
-                $mail->setFrom('djapanana@free.fr', 'reservations');
-                $mail->addAddress('sylvianna@free.fr', 'Sylvie Nana');     // Add a recipient
-                $mail->addAddress('sylvienana46@gmail.com');               // Name is optional
+                $mail->setFrom('le.musee.du.louvre.75@gmail.com', 'reservations');
+                $mail->addAddress('le.musee.du.louvre.75@gmail.com', 'Sylvie Nana');     // Add a recipient
+                $mail->addAddress('le.musee.le.musee.du.louvre.75@gmail.comdu.louvre.75@gmail.com');               // Name is optional
                 $mail->addReplyTo('djapanana@free.fr', 'Information');
                 //$mail->addCC('cc@example.com');
                 //$mail->addBCC('bcc@example.com');
 
                 //Attachments
                 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-                //$mail->addAttachment('https://www.projets-opc-nana.com/images/Logo_louvre.png');    // Optional name
+                //$mail->addAttachment('https://www.aghaad.fr/le_musee_du_louvre/images/Logo_louvre.png');    // Optional name
 
                 //Content
                 $mail->isHTML(true);                                  // Set email format to HTML
