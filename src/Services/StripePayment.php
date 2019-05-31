@@ -17,7 +17,7 @@ class StripePayment {
     public function StripePayment($prixTTC, $token) {
 
         try {
-            \Stripe\Stripe::setApiKey("sk_test_bCVNQLt51dY65QB94xiNzJbz00cMJ8bE9z");
+            \Stripe\Stripe::setApiKey("pk_test_OETqWICpPFb6Rwv8C3GXF7AH00JJanRIcx");
 
 
             // Token is created using Checkout or Elements!

@@ -1,8 +1,7 @@
 swiftmailer:
-    transport: smtp
-    auth_mode: login
-    port: 25
-    host: smtp.gmail.fr
-    username: aghaad
-    password: Joconde.75
-    spool: { type: 'memory' }
+#    url: '%env(MAILER_URL)%'
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }
