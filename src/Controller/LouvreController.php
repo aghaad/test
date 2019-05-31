@@ -106,7 +106,7 @@ class LouvreController extends AbstractController {
         $reservation = $session->get('session_billets');                        //vérification de la session
         if($reservation==null){
             $this->addFlash('danger','Vous n\'avez pas accès à cette page');    //Message d'erreur s'il n'y a pas de session
-            return $this->redirectToRoute('accueil');                           //Redirection vers la page d'accueil                  
+            return $this->redirectToRoute('reservation');                           //Redirection vers la page d'accueil                  
         }
         $billets = $reservation->getBillets();                                  // Récupération des billets
         return $this->render('louvre/recapitulatif.html.twig', [
@@ -127,7 +127,7 @@ class LouvreController extends AbstractController {
         
          if($reservation==null){
             $this->addFlash('danger','Vous n\'avez pas accès à cette page');
-            return $this->redirectToRoute('accueil');
+            return $this->redirectToRoute('reservation');
         }
         //Récupération de l'adresse mail
         $mail = filter_input(\INPUT_POST, 'email');

@@ -27,7 +27,7 @@ class SendMail2 {
 
     public function MailConfirmation($reservation, $billets) {
         $email = new \SendGrid\Mail\Mail(); 
-        $email->setFrom("Reservation@louvre.fr", "Confirmation de réservation");
+        $email->setFrom("greta.a.amrani@free.fr", "Confirmation de réservation");
         $email->setSubject("Votre réservation");
         $email->addTo("aghaad@live.fr", "Votre réservation");
         $email->addContent( $this->renderer->render(

@@ -2,7 +2,7 @@ swiftmailer:
     transport: smtp
     auth_mode: login
     port: 25
-    host: https://my.ionos.fr
+    host: smtp.gmail.fr
     username: aghaad
-    password: chaima.33
+    password: Gchaima.33
     spool: { type: 'memory' }
