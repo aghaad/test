@@ -46,10 +46,10 @@ class SendMail3 {
             $mail->Port = 587;                                    // TCP port to connect to
 
                 //Recipients
-                $mail->setFrom('am.aghaad@gmail.com', 'reservations');
-                $mail->addAddress('aghaad@live.fr', 'Mme AMRANI Aghaad');     // Add a recipient
-                $mail->addAddress('aghaad@live.fr');               // Name is optional
-                $mail->addReplyTo('am.aghaad@gmail.com', 'Information');
+                $mail->setFrom('le.musee.du.louvre.75@gmail.com', 'reservations');
+                $mail->addAddress('le.musee.du.louvre.75@gmail.com', 'Mme AMRANI Aghaad');     // Add a recipient
+                $mail->addAddress('le.musee.du.louvre.75@gmail.com');               // Name is optional
+                $mail->addReplyTo('le.musee.du.louvre.75@gmail.com', 'Information');
                 //$mail->addCC('cc@example.com');
                 //$mail->addBCC('bcc@example.com');
 

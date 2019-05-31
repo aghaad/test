@@ -28,7 +28,7 @@ class StripePayment {
                 'currency' => 'eur',
                 'description' => 'Paiement final',
                 'source' => $token,
-                'receipt_email' => 'aghaad@live.fr',
+                'receipt_email' => 'le.musee.du.louvre.75@gmail.com',
             ]);
         } catch (\Exception $e) {
             

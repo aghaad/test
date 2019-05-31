@@ -4,5 +4,5 @@ swiftmailer:
     port: 25
     host: smtp.gmail.fr
     username: aghaad
-    password: Gchaima.33
+    password: Joconde.75
     spool: { type: 'memory' }
