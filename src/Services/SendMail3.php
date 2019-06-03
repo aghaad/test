@@ -38,7 +38,7 @@ class SendMail3 {
                 //Server settings
                 $mail->SMTPDebug = 2;                                 // Enable verbose debug output
                 $mail->isSMTP();                                      // Set mailer to use SMTP
-                $mail->Host = 'email-smtp.eu-west-1.amazonaws.com';  // Specify main and backup SMTP servers
+                $mail->Host = ' smtp.gmail.com';  // Specify main and backup SMTP servers
                 $mail->SMTPAuth = true;                               // Enable SMTP authentication
                 $mail->Username = 'Your username';                 // SMTP username
                 $mail->Password = 'Your Password';                           // SMTP password
@@ -48,7 +48,7 @@ class SendMail3 {
                 //Recipients
                 $mail->setFrom('le.musee.du.louvre.75@gmail.com', 'reservations');
                 $mail->addAddress('le.musee.du.louvre.75@gmail.com', 'aghaad');     // Add a recipient
-                $mail->addAddress('le.musee.le.musee.du.louvre.75@gmail.comdu.louvre.75@gmail.com');               // Name is optional
+                $mail->addAddress('le.musee.du.louvre.75@gmail.com');               // Name is optional
                 $mail->addReplyTo('le.musee.du.louvre.75@gmail.com', 'Information');
                 //$mail->addCC('cc@example.com');
                 //$mail->addBCC('bcc@example.com');
