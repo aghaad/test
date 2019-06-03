@@ -3359,3 +3359,44 @@ SwiftMailer's Interactive Email Sender
  [OK] 1 emails were successfully sent.
 
 07:30:18 ERROR     [app] Exception occurred while flushing email queue: Connection could not be established with host smtp.gmail.fr [php_network_getaddresses: getaddrinfo failed: Hte inconnu.  #0]
+
+
+Le 3 juin 2019
+
+C:\wamp64\www\le_musee_du_louvre>composer require symfony/swiftmailer-bundle
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Using version ^3.2 for symfony/swiftmailer-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console swiftmailer:email:send
+
+SwiftMailer's Interactive Email Sender
+======================================
+
+ From:
+ > le.musee.du.louvre.75@gmail.com
+
+ To:
+ > le.musee.du.louvre.75@gmail.com
+
+ Subject:
+ > le.musee.du.louvre.75@gmail.com
+
+ Body:
+ > le.musee.du.louvre.75@gmail.com
+
+ [OK] 1 emails were successfully sent.
+
+16:16:06 ERROR     [app] Exception occurred while flushing email queue: Expected response code 250 but got code "530", with message "530 5.7.0 Must issue a STARTTLS command first. k10sm6865621wmj.37 - gsmtp
