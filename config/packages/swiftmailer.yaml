@@ -2,7 +2,7 @@ swiftmailer:
 #    url: '%env(MAILER_URL)%'
     transport: smtp
     auth_mode: login
-    port: 587
+    port: 465
     host:  smtp.gmail.com
     username: 'le.musee.du.louvre.75@gmail.com'
     password: 'Joconde.75'
