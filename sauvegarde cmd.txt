@@ -3400,3 +3400,121 @@ SwiftMailer's Interactive Email Sender
  [OK] 1 emails were successfully sent.
 
 16:16:06 ERROR     [app] Exception occurred while flushing email queue: Expected response code 250 but got code "530", with message "530 5.7.0 Must issue a STARTTLS command first. k10sm6865621wmj.37 - gsmtp
+
+
+sur https://support.google.com/a/answer/3726730?hl=fr
+
+530, "5.5.1", Authentification requise. En savoir plus
+530, "5.7.0", Une commande STARTTLS doit être émise en premier.
+
+
+sur https://kc.mcafee.com/corporate/index?page=content&id=KB74897&locale=fr_FR&viewlocale=fr_FR
+
+Environnement
+Logiciel McAfee Email and Web Security (EWS) Appliance 5.x
+McAfee Email Gateway (MEG) 7.x
+
+Problème
+La recherche de messages sur l'appliance indique que des e-mails ne sont pas remis et les erreurs suivantes s'affichent :
+530:Must issue a STARTTLS command first (530 : une commande STARTTLS doit être émise en premier lieu).
+
+Il existe une cause distincte pour chacun de ces codes 5xx :
+530:Must issue a STARTTLS command first (530 : une commande STARTTLS doit être émise en premier lieu).
+L'appliance reçoit ce message lorsque le serveur de messagerie de destination met en œuvre l'utilisation du protocole TLS (Transport Layer Security) alors que l'appliance ne l'utilise pas.
+
+
+Solution
+Identifiez la raison pour laquelle des e-mails envoyés par le biais du protocole TLS ont été retournés à l'appliance, ainsi que les motifs ou codes d'erreur :
+
+Email Gateway Appliance 7.x 
+Connectez-vous à la console de gestion de l'appliance.
+Cliquez sur Rapports et Recherche de messages, puis sélectionnez le statut de message Retourné dans la liste déroulante.
+Cliquez sur Rechercher/Actualiser.
+Vérifiez le code d'erreur de chacun des messages non remis dans la colonne Statut/Catégorie. 
+ 
+Email and Web Security Appliance 5.6
+Connectez-vous à la console de gestion de l'appliance.
+Cliquez sur Messagerie et Recherche de messages, puis sélectionnez le statut de message Retourné dans la liste déroulante.
+Cliquez sur Rechercher/Actualiser.
+Vérifiez le code d'erreur de chacun des messages non remis dans la colonne Statut/Catégorie. 
+ 
+ 
+Utilisez le champ Solution ci-dessous pertinent pour le code 5xx identifié.
+Solution
+Error 530:Must issue a STARTTLS command first (Erreur 530 : une commande STARTTLS doit être émise en premier lieu). 
+Ce message d'erreur est reçu lorsque le serveur de messagerie de destination autorise uniquement les connexions TLS alors que l'appliance n'est pas configurée pour utiliser ce protocole.
+
+Email Gateway Appliance 7.x :
+Connectez-vous à la console de gestion de l'appliance.
+Sélectionnez Messagerie, Chiffrement, Paramètres de chiffrement et TLS.
+Sous Connexions TLS lors de l'envoi d'un e-mail (la passerelle fonctionne comme un client), recherchez l'entrée en tête de liste correspondant au serveur de messagerie de destination. 
+
+REMARQUE : en guise de critère de recherche, vous pouvez utiliser le nom de domaine complet (FQDN), le nom de domaine ou l'adresse IP du serveur de messagerie de destination, ou encore le nom de domaine de l'adresse e-mail du destinataire.
+ 
+ 
+Pour ce serveur de messagerie, remplacez le paramètre Jamais par Si possible ou Toujours pour l'option Utiliser TLS.
+Cliquez sur OK, puis appliquez les modifications requises.
+IMPORTANT : par défaut, la liste contient une entrée « * » correspondant à tout serveur de messagerie de destination dont le paramètre de l'option Utiliser TLS est déjà défini sur Si possible. S'il est nécessaire de supprimer l'entrée par défaut ou de définir l'entrée Utiliser TLS par défaut sur le paramètre Jamais, vous pouvez créer en tête de liste une nouvelle entrée basée sur le nom de domaine complet (FQDN), le nom de domaine ou l'adresse IP du serveur de messagerie de destination, ou encore sur le nom de domaine ou l'adresse IP de l'adresse e-mail du destinataire. Définissez les paramètres conformément aux indications ci-dessus.
+
+Email and Web Security Appliance 5.x :
+Connectez-vous à la console de gestion de l'appliance.
+Sélectionnez Messagerie, Configuration des e-mails, Configuration des protocoles et Transport Layer Security (SMTP).
+Sous Connexions TLS lors de l'envoi d'un e-mail (l'appliance fonctionne comme un client), recherchez l'entrée en tête de liste correspondant au serveur de messagerie de destination. 
+
+REMARQUE : en guise de critère de recherche, vous pouvez utiliser le nom de domaine complet (FQDN), le nom de domaine ou l'adresse IP du serveur de messagerie de destination, ou encore le nom de domaine de l'adresse e-mail du destinataire. 
+
+ 
+Pour ce serveur de messagerie, remplacez le paramètre Jamais par Si possible ou Toujours pour l'option Utiliser TLS.
+Cliquez sur OK, puis appliquez les modifications requises.
+IMPORTANT : par défaut, le protocole TLS est configuré pour ne jamais être utilisé et la liste est vide. Vous pouvez créer une nouvelle entrée basée sur le nom de domaine complet (FQDN), le nom de domaine ou l'adresse IP du serveur de messagerie de destination, ou encore sur le nom de domaine ou l'adresse IP de l'adresse e-mail du destinataire. Définissez les paramètres conformément aux indications ci-dessus.
+
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console swiftmailer:email:send
+
+SwiftMailer's Interactive Email Sender
+======================================
+
+ From:
+ > aghad@live.fr
+
+ To:
+ > aghaad@live.fr
+
+ Subject:
+ > aghaad@live.fr
+
+ Body:
+ > aghaad@live.fr
+
+ [OK] 1 emails were successfully sent.
+
+17:38:25 ERROR     [app] Exception occurred while flushing email queue: Connection to smtp.gmail.com:465 Timed Out
+Une exception s'est produite lors de la vidange de la file d'attente des e-mails : Connexion à smtp.gmail.com:465 Timed Out
+
+
+
+
+le 4 juin 2019
+
+YAML
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre>composer require symfony/yaml
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]

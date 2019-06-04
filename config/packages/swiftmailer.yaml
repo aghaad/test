@@ -1,6 +1,6 @@
 swiftmailer:
 #    url: '%env(MAILER_URL)%'
-    transport: smtp
+    transport: sendmail
     auth_mode: login
     port: 465
     host:  smtp.gmail.com
