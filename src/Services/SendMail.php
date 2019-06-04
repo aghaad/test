@@ -38,7 +38,7 @@ class SendMail {
         $message = new Swift_Message('Réservation de billet(s)');
         //Création du message envoyé par mail
         $cid = $message->embed(Swift_Image::fromPath('images/Logo_louvre.png'));
-        $message->setFrom('le.musee.du.louvre.75@gmail.com')
+        $message->setFrom('greta.a.amrani@free.fr')
                 ->setTo($reservation->getMail())
                 ->attach(Swift_Attachment::fromPath('images/Logo_louvre.png'))
                 ->setBody(

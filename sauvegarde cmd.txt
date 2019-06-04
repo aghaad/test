@@ -3518,3 +3518,42 @@ Executing script cache:clear [OK]
 Executing script assets:install public [OK]
 Executing script requirements-checker [OK]
 Executing script security-checker security:check [OK]
+
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console swiftmailer:email:send
+
+SwiftMailer's Interactive Email Sender
+======================================
+
+ From:
+ > le.musee.du.louvre.75@gmail.com
+
+ To:
+ > le.musee.du.louvre.75@gmail.com
+
+ Subject:
+ > le.musee.du.louvre.75@gmail.com
+
+ Body:
+ > le.musee.du.louvre.75@gmail.com
+
+ [OK] 1 emails were successfully sent.
+
+09:11:58 ERROR     [app] Exception occurred while flushing email queue: Process could not be started [Le chemin d’accès spécifié est introuvable.
+]
+
+
+
+
+
+
+swiftmailer:
+#    url: '%env(MAILER_URL)%'
+    transport: sendmail
+    auth_mode: login
+    port: 465
+    host:  smtp.gmail.com
+    username: 'le.musee.du.louvre.75@gmail.com'
+    password: 'Joconde.75'
+    spool: { type: 'memory' }
