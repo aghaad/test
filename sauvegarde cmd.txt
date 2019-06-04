@@ -3557,3 +3557,86 @@ swiftmailer:
     username: 'le.musee.du.louvre.75@gmail.com'
     password: 'Joconde.75'
     spool: { type: 'memory' }
+
+
+    le 4 juin 2019
+
+    
+C:\wamp64\www\le_musee_du_louvre>composer require orm-fixtures --dev
+Using version ^3.1 for doctrine/doctrine-fixtures-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:fixtures
+
+ The class name of the fixtures to create (e.g. AppFixtures):
+ > TarifsFixtures
+
+ created: src/DataFixtures/TarifsFixtures.php
+
+
+  Success!
+
+
+ Next: Open your new fixtures class and start customizing it.
+ Load your fixtures by running: php bin/console doctrine:fixtures:load
+ Docs: https://symfony.com/doc/master/bundles/DoctrineFixturesBundle/index.html
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console make:fixtures
+
+ The class name of the fixtures to create (e.g. AppFixtures):
+ > AppFixtures
+
+ created: src/DataFixtures/AppFixtures.php
+
+
+  Success!
+
+
+ Next: Open your new fixtures class and start customizing it.
+ Load your fixtures by running: php bin/console doctrine:fixtures:load
+ Docs: https://symfony.com/doc/master/bundles/DoctrineFixturesBundle/index.html
+
+
+ C:\wamp64\www\le_musee_du_louvre>php bin/console make:fixtures
+
+ The class name of the fixtures to create (e.g. AppFixtures):
+ > AppFixtures
+
+ created: src/DataFixtures/AppFixtures.php
+
+
+  Success!
+
+
+ Next: Open your new fixtures class and start customizing it.
+ Load your fixtures by running: php bin/console doctrine:fixtures:load
+ Docs: https://symfony.com/doc/master/bundles/DoctrineFixturesBundle/index.html
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:fixtures:load
+
+
+  There are no commands defined in the "doctrine:fixtures" namespace.
+
+  Did you mean one of these?
+      doctrine
+      doctrine:cache
+      doctrine:database
+      doctrine:generate
+      doctrine:mapping
+      doctrine:migrations
+      doctrine:query
+      doctrine:schema

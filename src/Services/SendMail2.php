@@ -27,8 +27,8 @@ class SendMail2 {
 
     public function MailConfirmation($reservation, $billets) {
         $email = new \SendGrid\Mail\Mail(); 
-        $email->setFrom("greta.a.amrani@free.fr", "Confirmation de réservation");
-        $email->setSubject("Votre réservationgreta.a.amrani@free.fr");
+        $email->setFrom("le.musee.du.louvre.75@gmail.com", "Confirmation de réservation");
+        $email->setSubject("Votre réservation");
         $email->addTo("le.musee.du.louvre.75@gmail.com", "Votre réservation");
         $email->addContent( $this->renderer->render(
                         // templates/emails/confirmation.html.twig
