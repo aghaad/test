@@ -12,7 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 /**
  * Description of PostControllerTest
  *
- * 
+ * @author djapa
  */
 class PostControllerTest extends WebTestCase{
     
