@@ -12,7 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 /**
  * Description of PostControllerTest
  *
- * @author djapa
+ * @author aghaad
  */
 class PostControllerTest extends WebTestCase{
     
@@ -33,7 +33,7 @@ class PostControllerTest extends WebTestCase{
     
     public function testIndex() {
         $client = static::createClient();
-        $client->request('GET','/accueil');
+        $client->request('GET','/reservation');
         $this->assertSame(200,$client->getResponse()->getStatusCode());
     }
     

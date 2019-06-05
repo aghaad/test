@@ -3640,3 +3640,134 @@ C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:fixtures:load
       doctrine:migrations
       doctrine:query
       doctrine:schema
+
+
+
+      LE 6 JUIN 2019
+
+
+ C:\wamp64\www\le_musee_du_louvre>vendor/bin/phpunit
+'vendor' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>make phpunit
+'make' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>./bin/phpunit
+'.' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>composer req --dev tests
+Using version ^1.0 for symfony/test-pack
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>./vendor/bin/simple-phpunit
+'.' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/browser-kit symfony/css-selector
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Package operations: 0 installs, 2 updates, 0 removals
+  - Downgrading symfony/browser-kit (v4.2.8 => v4.1.12): Loading from cache
+  - Downgrading symfony/css-selector (v4.2.8 => v4.1.12): Loading from cache
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>PANTHER_NO_HEADLESS=1 /vendor/bin/simple-phpunit --filter="SmokeTest"
+'PANTHER_NO_HEADLESS' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/profiler-pack
+Using version ^1.0 for symfony/profiler-pack
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+
+C:\wamp64\www\le_musee_du_louvre>php bin/console cache:clear       C EST POUR VIDER LE CACHE --DEV
+
+ // Clearing the cache for the dev environment with debug true
+
+ [OK] Cache for the "dev" environment (debug=true) was successfully cleared.
+
+
+
+ C:\wamp64\www\le_musee_du_louvre>php bin/console cache:clear --env=prod      C EST POUR VIDER LE CACHE --PROD
+
+ // Clearing the cache for the prod environment with debug false
+
+ [OK] Cache for the "prod" environment (debug=false) was successfully cleared.
+
+
+
+
+ 
+C:\wamp64\www\le_musee_du_louvre>bin/console security:check
+'bin' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>PHP bin/console security:check
+?[33mSymfony Security Check Report?[0m
+?[33m=============================?[0m
+
+?[37;42mNo packages have known vulnerabilities.?[0m
+
+
+
+C:\wamp64\www\le_musee_du_louvre>composer require sensiolabs/security-checker                     INSTALLATION SECURITY SENSIOLAB
+Using version ^6.0 for sensiolabs/security-checker
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - Installation request for sensiolabs/security-checker ^6.0 -> satisfiable by sensiolabs/security-checker[v6.0.0].
+    - sensiolabs/security-checker v6.0.0 requires symfony/console ^2.8|^3.4|^4.2 -> no matching package found.
+
+Potential causes:
+ - A typo in the package name
+ - The package is not available in a stable-enough version according to your minimum-stability setting
+   see <https://getcomposer.org/doc/04-schema.md#minimum-stability> for more details.
+ - It's a private package and you forgot to add a custom repository to find it
+
+Read <https://getcomposer.org/doc/articles/troubleshooting.md> for further common problems.
+
+Installation failed, reverting ./composer.json to its original content.
