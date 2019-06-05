@@ -3771,3 +3771,48 @@ Potential causes:
 Read <https://getcomposer.org/doc/articles/troubleshooting.md> for further common problems.
 
 Installation failed, reverting ./composer.json to its original content.
+
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre>composer require symfony/requirements-checker              
+Using version ^1.1 for symfony/requirements-checker
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+
+
+
+HEROKU                                                                                        HEROKU
+
+
+C:\>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/browser/af8aef5b-4178-44fa-a413-6d7593a8960e
+Logging in... done
+Logged in as aghaad@live.fr
+
+
+
+C:\>php -v
+PHP 7.1.9 (cli) (built: Aug 30 2017 18:34:46) ( ZTS MSVC14 (Visual C++ 2015) x64 )
+Copyright (c) 1997-2017 The PHP Group
+Zend Engine v3.1.0, Copyright (c) 1998-2017 Zend Technologies
+
+C:\>composer -V
+Composer version 1.8.5 2019-04-09 17:46:47
+
+C:\>git --version
+git version 2.21.0.windows.1
