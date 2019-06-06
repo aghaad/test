@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4d52a98b9337fbbb57c214147736d52",
+    "content-hash": "04866134265f73f8ee66767f5b5ceec0",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1311,60 +1311,6 @@
                 "validator"
             ],
             "time": "2019-05-16T22:02:54+00:00"
-        },
-        {
-            "name": "expertcoder/swiftmailer-send-grid-bundle",
-            "version": "2.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/expertcoder/SwiftmailerSendGridBundle.git",
-                "reference": "a49bfbf01ec28c9bdc4f9a0797083cbb7ed98f5b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/expertcoder/SwiftmailerSendGridBundle/zipball/a49bfbf01ec28c9bdc4f9a0797083cbb7ed98f5b",
-                "reference": "a49bfbf01ec28c9bdc4f9a0797083cbb7ed98f5b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0",
-                "sendgrid/php-http-client": "~3.9.4",
-                "sendgrid/sendgrid": "^7.0",
-                "symfony/framework-bundle": "~2.7|~3.3|~4.0",
-                "symfony/swiftmailer-bundle": "~3.2",
-                "symfony/yaml": "~2.7|~3.3|~4.0"
-            },
-            "require-dev": {
-                "nyholm/symfony-bundle-test": "^1.3"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "ExpertCoder\\Swiftmailer\\SendGridBundle\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Samual Anthony",
-                    "email": "sam@expertcoder.io"
-                },
-                {
-                    "name": "Maxime Hermouet",
-                    "email": "moux2003@hotmail.com"
-                }
-            ],
-            "description": "Swiftmailer Transport and Symfony bundle for Sendgrid",
-            "homepage": "https://github.com/expertcoder/SwiftmailerSendGridBundle",
-            "time": "2018-10-22T09:59:33+00:00"
         },
         {
             "name": "fig/link-util",

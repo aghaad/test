@@ -4067,6 +4067,166 @@ INSTALLATION  HEROKU AVEC SYMFONY
 
 
 
+C:\wamp64\www\le_musee_du_louvre>composer create-project symfony/framework-standard-edition:^3.0 symfony_heroku/
+Installing symfony/framework-standard-edition (v3.0.0)  - Installing symfony/framework-standard-edition (v3.0.0): Downloading (100%)
+Created project in symfony_heroku/
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Package operations: 31 installs, 0 updates, 0 removals
+  - Installing doctrine/lexer (v1.0.1): Loading from cache
+  - Installing doctrine/annotations (v1.2.7): Loading from cache
+  - Installing twig/twig (v1.23.1): Downloading (100%)
+  - Installing symfony/polyfill-util (v1.0.0): Loading from cache
+  - Installing paragonie/random_compat (1.1.0): Downloading (100%)
+  - Installing symfony/polyfill-php70 (v1.0.0): Loading from cache
+  - Installing symfony/polyfill-php56 (v1.0.0): Downloading (100%)
+  - Installing symfony/polyfill-mbstring (v1.0.0): Downloading (100%)
+  - Installing symfony/symfony (v3.0.0): Downloading (100%)
+  - Installing symfony/polyfill-intl-icu (v1.0.0): Loading from cache
+  - Installing psr/log (1.0.0): Loading from cache
+  - Installing doctrine/inflector (v1.1.0): Loading from cache
+  - Installing doctrine/collections (v1.3.0): Loading from cache
+  - Installing doctrine/cache (v1.5.1): Downloading (100%)
+  - Installing doctrine/common (v2.5.1): Downloading (100%)
+  - Installing jdorn/sql-formatter (v1.2.17): Loading from cache
+  - Installing doctrine/doctrine-cache-bundle (1.2.2): Loading from cache
+  - Installing doctrine/dbal (v2.5.2): Downloading (100%)
+  - Installing doctrine/doctrine-bundle (1.6.0): Downloading (100%)
+  - Installing doctrine/instantiator (1.0.5): Loading from cache
+  - Installing doctrine/orm (v2.5.2): Downloading (100%)
+  - Installing incenteev/composer-parameter-handler (v2.1.2): Loading from cache
+  - Installing sensiolabs/security-checker (v3.0.2): Loading from cache
+  - Installing sensio/distribution-bundle (v5.0.2): Downloading (100%)
+  - Installing sensio/framework-extra-bundle (v3.0.11): Downloading (100%)
+  - Installing monolog/monolog (1.17.2): Loading from cache
+  - Installing symfony/monolog-bundle (v2.8.2): Loading from cache
+  - Installing swiftmailer/swiftmailer (v5.4.1): Loading from cache
+  - Installing symfony/swiftmailer-bundle (v2.3.9): Downloading (100%)
+  - Installing sensio/generator-bundle (v3.0.0): Downloading (100%)
+  - Installing symfony/phpunit-bridge (v2.8.0): Downloading (100%)
+paragonie/random_compat suggests installing ext-libsodium (Provides a modern crypto API that can be used to generate random bytes.)
+doctrine/doctrine-cache-bundle suggests installing symfony/security-acl (For using this bundle to cache ACLs)
+sensio/framework-extra-bundle suggests installing symfony/psr-http-message-bridge (To use the PSR-7 converters)
+monolog/monolog suggests installing aws/aws-sdk-php (Allow sending log messages to AWS services like DynamoDB)
+monolog/monolog suggests installing doctrine/couchdb (Allow sending log messages to a CouchDB server)
+monolog/monolog suggests installing ext-amqp (Allow sending log messages to an AMQP server (1.0+ required))
+monolog/monolog suggests installing ext-mongo (Allow sending log messages to a MongoDB server)
+monolog/monolog suggests installing graylog2/gelf-php (Allow sending log messages to a GrayLog2 server)
+monolog/monolog suggests installing php-console/php-console (Allow sending log messages to Google Chrome)ding log messages to Google Chrome)                                   sages to a Sentry server)
+monolog/monolog suggests installing raven/raven (Allow sending log mes messages to Rollbar)sages to a Sentry server)                                              messages to an Elastic Search server)
+monolog/monolog suggests installing rollbar/rollbar (Allow sending logding log messages to an AMQP server using php-amqplib) messages to Rollbar)
+monolog/monolog suggests installing ruflin/elastica (Allow sending log messages to an Elastic Search server)monolog/monolog suggests installing videlalvaro/php-amqplib (Allow sending log messages to an AMQP server using php-amqplib)
+Generating autoload files> Incenteev\ParameterHandler\ScriptHandler::buildParameters
+Creating the "app/config/parameters.yml" file
+Some parameters are missing. Please provide them.
+database_host (127.0.0.1):
+database_port (null):
+database_name (symfony):
+database_user (root): root
+database_password (null):
+mailer_transport (smtp): smtp
+mailer_host (127.0.0.1):
+mailer_user (null): le.musee.du.louvre.75@gmail.com
+mailer_password (null): Joconde.75
+secret (ThisTokenIsNotSoSecretChangeIt):
+Deprecation Notice: The callback Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::buildBootstrap declared at C:\wamp64\www\le_musee_du_louvre\symfony_heroku\vendor\sensio\distribution-bundle\Composer\ScriptHandler.php accepts a Composer\Script\CommandEvent but post-install-cmd events use a Composer\Script\Event instance. Please adjust your type hint accordingly, see https://getcomposer.org/doc/articles/scripts.md#event-classes in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/src/Composer/EventDispatcher/EventDispatcher.php:331
+> Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::buildBootstrap
+Deprecation Notice: The callback Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::clearCache declared at C:\wamp64\www\le_musee_du_louvre\symfony_heroku\vendor\sensio\distribution-bundle\Composer\ScriptHandler.php accepts a Composer\Script\CommandEvent but post-install-cmd events use a Composer\Script\Event instance. Please adjust your type hint accordingly, see https://getcomposer.org/doc/articles/scripts.md#event-classes in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/src/Composer/EventDispatcher/EventDispatcher.php:331
+> Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::clearCache
+
+ // Clearing the cache for the dev environment with debug true
+
+ [OK] Cache for the "dev" environment (debug=true) was successfully cleared.
+
+Deprecation Notice: The callback Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::installAssets declared at C:\wamp64\www\le_musee_du_louvre\symfony_heroku\vendor\sensio\distribution-bundle\Composer\ScriptHandler.php accepts a Composer\Script\CommandEvent but post-install-cmd events use a Composer\Script\Event instance. Please adjust your type hint accordingly, see https://getcomposer.org/doc/articles/scripts.md#event-classes in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/src/Composer/EventDispatcher/EventDispatcher.php:331
+> Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::installAssets
+
+ Trying to install assets as relative symbolic links.
+
+ --------- ----------------- ----------------
+            Bundle            Method / Error
+ --------- ----------------- ----------------
+  WARNING   FrameworkBundle   copy
+ --------- ----------------- ----------------
+
+ ! [NOTE] Some assets were installed via copy. If you make changes to these assets you have to run this command again.
+
+ [OK] All assets were successfully installed.
+
+Deprecation Notice: The callback Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::installRequirementsFile declared at C:\wamp64\www\le_musee_du_louvre\symfony_heroku\vendor\sensio\distribution-bundle\Composer\ScriptHandler.php accepts a Composer\Script\CommandEvent but post-install-cmd events use a Composer\Script\Event instance.
+Please adjust your type hint accordingly, see https://getcomposer.org/doc/articles/scripts.md#event-classes in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/src/Composer/EventDispatcher/EventDispatcher.php:331
+> Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::installRequirementsFile
+Deprecation Notice: The callback Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::prepareDeploymentTarget declared at C:\wamp64\www\le_musee_du_louvre\symfony_heroku\vendor\sensio\distribution-bundle\Composer\ScriptHandler.php accepts a Composer\Script\CommandEvent but post-install-cmd events use a Composer\Script\Event instance.
+Please adjust your type hint accordingly, see https://getcomposer.org/doc/articles/scripts.md#event-classes in phar://C:/ProgramData/ComposerSetup/bin/composer.phar/src/Composer/EventDispatcher/EventDispatcher.php:331
+> Sensio\Bundle\DistributionBundle\Composer\ScriptHandler::prepareDeploymentTarget
+
+---------------------------------------------------------------------------------------
+
+C:\wamp64\www\le_musee_du_louvre>composer require mailer
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Using version ^3.2 for symfony/swiftmailer-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>v=spf1 include:sendgrid.net ~all
+'v' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>composer require sendgrid
+
+
+  [UnexpectedValueException]
+  "sendgrid" is not a valid alias. Did you mean this:
+    "symfony/sendgrid-mailer", supported aliases: "sendgrid-mailer", "sendgridmailer"
+
+
+require [--dev] [--prefer-source] [--prefer-dist] [--no-progress] [--no-suggest] [--no-update] [--no-scripts] [--update-no-dev] [--update-with-dependencies] [--update-with-all-dependencies] [--ignore-platform-reqs] [--prefer-stable] [--prefer-lowest] [--sort-packages] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--unpack] [--] [<packages>]...
+
+
+C:\wamp64\www\le_musee_du_louvre>composer require expertcoder/swiftmailer-send-grid-bundle
+Using version ^2.2 for expertcoder/swiftmailer-send-grid-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Package operations: 1 install, 0 updates, 0 removals
+  - Installing expertcoder/swiftmailer-send-grid-bundle (2.2.3): Downloading (100%)
+Writing lock file
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Symfony operations: 1 recipe (d837e27231ecf18d4402cc939e871e0b)
+  -  WARNING  expertcoder/swiftmailer-send-grid-bundle (>=2.0): From github.com/symfony/recipes-contrib:master
+    The recipe for this package comes from the "contrib" repository, which is open to community contributions.
+    Review the recipe at https://github.com/symfony/recipes-contrib/tree/master/expertcoder/swiftmailer-send-grid-bundle/2.0
+
+    Do you want to execute this recipe?
+    [y] Yes
+    [n] No
+    [a] Yes for all packages, only for the current installation session
+    [p] Yes permanently, never ask again for this project
+    (defaults to n): y
+  - Configuring expertcoder/swiftmailer-send-grid-bundle (>=2.0): From github.com/symfony/recipes-contrib:master
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+Some files may have been created or updated to configure your new packages.
+Please review, edit and commit them: these files are yours.
+
+
 
 
 

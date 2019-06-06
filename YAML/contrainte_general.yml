@@ -35,4 +35,4 @@ fermetures:
     -11/11
     -noel->format('m/d') . '+1 day'
     -ascension->format('m/d') . '+39 day'
-    -pentecote->format('m/d') . '+50 day'      
+    -pentecote->format('m/d') . '+50 day' 
