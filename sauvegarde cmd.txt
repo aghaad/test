@@ -4229,6 +4229,68 @@ Please review, edit and commit them: these files are yours.
 
 
 
+#########################################################################################################################
 
 
+
+C:\wamp64\www\le_musee_du_louvre>heroku create
+Creating app... done, ⬢ ancient-beyond-17061
+https://ancient-beyond-17061.herokuapp.com/ | https://git.heroku.com/ancient-beyond-17061.git
+
+C:\wamp64\www\le_musee_du_louvre>git remote -v
+HEROKU  https://git.heroku.com/dry-crag-92597.git (fetch)
+HEROKU  https://git.heroku.com/dry-crag-92597.git (push)
+aghaad  https://aghaad@bitbucket.org/aghaad/le_musee_du_louvre.git (fetch)
+aghaad  https://aghaad@bitbucket.org/aghaad/le_musee_du_louvre.git (push)
+heroku  https://git.heroku.com/ancient-beyond-17061.git (fetch)
+heroku  https://git.heroku.com/ancient-beyond-17061.git (push)
+
+C:\wamp64\www\le_musee_du_louvre> heroku git:remote
+ »   Error: Specify an app with --app
+
+C:\wamp64\www\le_musee_du_louvre>git remote rename heroku heroku-staging
+
+C:\wamp64\www\le_musee_du_louvre>git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\wamp64\www\le_musee_du_louvre>git push heroku testbranch:master
+error: src refspec testbranch does not match any
+error: failed to push some refs to 'heroku'
+
+C:\wamp64\www\le_musee_du_louvre>git push
+Everything up-to-date
+
+C:\wamp64\www\le_musee_du_louvre>heroku update
+heroku: Updating CLI... already on latest version: 7.25.0
+
+C:\wamp64\www\le_musee_du_louvre>composer require mailer
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Using version ^3.2 for symfony/swiftmailer-bundle
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [OK]
+Executing script assets:install public [OK]
+Executing script requirements-checker [OK]
+Executing script security-checker security:check [OK]
+
+
+C:\wamp64\www\le_musee_du_louvre>composer require sendgrid
+
+
+  [UnexpectedValueException]
+  "sendgrid" is not a valid alias. Did you mean this:
+    "symfony/sendgrid-mailer", supported aliases: "sendgrid-mailer", "sendgridmailer"
+
+
+require [--dev] [--prefer-source] [--prefer-dist] [--no-progress] [--no-suggest] [--no-update] [--no-scripts] [--update-no-dev] [--update-with-dependencies] [--update-with-all-dependencies] [--ignore-platform-reqs] [--prefer-stable] [--prefer-lowest] [--sort-packages] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--unpack] [--] [<packages>]...
 
