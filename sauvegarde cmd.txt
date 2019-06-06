@@ -3642,7 +3642,7 @@ C:\wamp64\www\le_musee_du_louvre>php bin/console doctrine:fixtures:load
       doctrine:schema
 
 
-
+#####################################################################################################################################
       LE 6 JUIN 2019
 
 
@@ -3678,7 +3678,7 @@ Executing script security-checker security:check [OK]
 C:\wamp64\www\le_musee_du_louvre>./vendor/bin/simple-phpunit
 '.' n’est pas reconnu en tant que commande interne
 ou externe, un programme exécutable ou un fichier de commandes.
-
+-----------------------------------------------------------------------------------------------------------------
 C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/browser-kit symfony/css-selector
 Restricting packages listed in "symfony/symfony" to "4.1.*"
 ./composer.json has been updated
@@ -3701,7 +3701,7 @@ Executing script security-checker security:check [OK]
 C:\wamp64\www\le_musee_du_louvre>PANTHER_NO_HEADLESS=1 /vendor/bin/simple-phpunit --filter="SmokeTest"
 'PANTHER_NO_HEADLESS' n’est pas reconnu en tant que commande interne
 ou externe, un programme exécutable ou un fichier de commandes.
-
+------------------------------------------------------------------------------------------------------------------------
 C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/profiler-pack
 Using version ^1.0 for symfony/profiler-pack
 ./composer.json has been updated
@@ -3718,7 +3718,7 @@ Executing script assets:install public [OK]
 Executing script requirements-checker [OK]
 Executing script security-checker security:check [OK]
 
-
+-------------------------------------------------------------------------------------------------------------------
 
 C:\wamp64\www\le_musee_du_louvre>php bin/console cache:clear       C EST POUR VIDER LE CACHE --DEV
 
@@ -3735,7 +3735,7 @@ C:\wamp64\www\le_musee_du_louvre>php bin/console cache:clear       C EST POUR VI
  [OK] Cache for the "prod" environment (debug=false) was successfully cleared.
 
 
-
+-------------------------------------------------------------------------------------------------------------
 
  
 C:\wamp64\www\le_musee_du_louvre>bin/console security:check
@@ -3748,7 +3748,7 @@ C:\wamp64\www\le_musee_du_louvre>PHP bin/console security:check
 
 ?[37;42mNo packages have known vulnerabilities.?[0m
 
-
+--------------------------------------------------------------------------------------------------------------------
 
 C:\wamp64\www\le_musee_du_louvre>composer require sensiolabs/security-checker                     INSTALLATION SECURITY SENSIOLAB
 Using version ^6.0 for sensiolabs/security-checker
@@ -3773,7 +3773,7 @@ Read <https://getcomposer.org/doc/articles/troubleshooting.md> for further commo
 Installation failed, reverting ./composer.json to its original content.
 
 
-
+-----------------------------------------------------------------------------------------------------------
 
 
 C:\wamp64\www\le_musee_du_louvre>composer require symfony/requirements-checker              
@@ -3792,7 +3792,7 @@ Executing script requirements-checker [OK]
 Executing script security-checker security:check [OK]
 
 
-
+-------------------------------------------------------------------------------------------------
 
 
 HEROKU                                                                                        HEROKU
@@ -3804,7 +3804,7 @@ Opening browser to https://cli-auth.heroku.com/auth/browser/af8aef5b-4178-44fa-a
 Logging in... done
 Logged in as aghaad@live.fr
 
-
+---------------------------------------------------------------------------------------
 
 C:\>php -v
 PHP 7.1.9 (cli) (built: Aug 30 2017 18:34:46) ( ZTS MSVC14 (Visual C++ 2015) x64 )
@@ -3816,3 +3816,259 @@ Composer version 1.8.5 2019-04-09 17:46:47
 
 C:\>git --version
 git version 2.21.0.windows.1
+
+---------------------------------------------------------------------------------------------------
+
+C:\wamp64\www\le_musee_du_louvre>git config --lis             IDENTIFICATION GIT
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+:...skipping...
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+credential.helper=manager
+user.name=Aghaad
+user.email=aghaad@live.fr
+core.bare=false
+core.repositoryformatversion=0
+core.filemode=false
+core.symlinks=false
+core.ignorecase=true
+core.logallrefupdates=true
+remote.aghaad.url=https://aghaad@bitbucket.org/aghaad/le_musee_du_louvre.gitremote.aghaad.fetch=+refs/heads/*:refs/remotes/aghaad/*
+branch.master.remote=aghaad
+branch.master.merge=refs/heads/master
+(END)
+
+core.repositoryformatversion=0
+core.filemode=false
+core.symlinks=false
+core.ignorecase=true
+core.logallrefupdates=true
+remote.aghaad.url=https://aghaad@bitbucket.org/aghaad/le_musee_du_louvre.git
+remote.aghaad.fetch=+refs/heads/*:refs/remotes/aghaad/*
+branch.master.remote=aghaad
+branch.master.merge=refs/heads/master
+
+
+-------------------------------------------
+
+
+Créer une télécommande Heroku
+
+
+
+
+C:\>heroku create
+Creating app... done, ⬢ infinite-springs-39964
+https://infinite-springs-39964.herokuapp.com/ | https://git.heroku.com/infinite-springs-39964.git
+
+C:\>git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+
+
+C:\wamp64\www\le_musee_du_louvre>git remote -v
+aghaad  https://aghaad@bitbucket.org/aghaad/le_musee_du_louvre.git (fetch)
+aghaad  https://aghaad@bitbucket.org/aghaad/le_musee_du_louvre.git (push)
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre> heroku git:remote                                       IMPOSSIBLE DE RENOMMER LE GIT
+'heroku' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>git remote rename heroku heroku-staging
+fatal: No such remote: 'heroku'
+
+C:\wamp64\www\le_musee_du_louvre>git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\wamp64\www\le_musee_du_louvre>git push heroku testbranch:master
+error: src refspec testbranch does not match any
+error: failed to push some refs to 'heroku'
+
+
+
+C:\wamp64\www\le_musee_du_louvre>git push                                                          PAS DE CONNECTION AVEC BITBUCKET
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Password for 'https://aghaad@bitbucket.org':
+remote: Invalid username or password
+fatal: Authentication failed for 'https://aghaad@bitbucket.org/aghaad/le_musee_du_louvre.git/'
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre>git push                                                                     ENFIN!!!
+Everything up-to-date
+
+-------------------------------------------------------------------------------------------------------------  SSH
+
+C:\>heroku create --ssh-git
+Creating app... done, ⬢ peaceful-journey-18259
+https://peaceful-journey-18259.herokuapp.com/ | git@heroku.com:peaceful-journey-18259.git
+
+
+-------------------------------------------------------------------------------------------------------------------Préparez l'application
+
+
+C:\wamp64\www\le_musee_du_louvre>git clone https://github.com/heroku/php-getting-started.git
+Cloning into 'php-getting-started'...
+remote: Enumerating objects: 189, done.
+Receiving objects:  64% (121/189), 28.01 KiB | 47.00 KiB/remote: Total 189 (delta 0), reused 0 (delta 0), pack-reused 189
+Receiving objects: 100% (189/189), 49.79 KiB | 78.00 KiB/s, done.
+Resolving deltas: 100% (77/77), done.
+
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre>cd php-getting-started
+
+C:\wamp64\www\le_musee_du_louvre\php-getting-started>
+C:\wamp64\www\le_musee_du_louvre\php-getting-started>
+
+
+
+
+C:\>heroku create
+Creating app... done, ⬢ lit-woodland-27092
+https://lit-woodland-27092.herokuapp.com/ | https://git.heroku.com/lit-woodland-27092.git
+
+
+C:\>git push heroku master
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\>git push heroku
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\>heroku open
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+C:\>
+C:\>heroku logs --tail
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+C:\>heroku
+CLI to interact with Heroku
+
+VERSION
+  heroku/7.25.0 win32-x64 node-v11.14.0
+
+USAGE
+  $ heroku [COMMAND]
+
+COMMANDS
+  access          manage user access to apps
+  addons          tools and services for developing, extending, and operating your app
+  apps            manage apps on Heroku
+  auth            check 2fa status
+  authorizations  OAuth authorizations
+  autocomplete    display autocomplete installation instructions
+  buildpacks      scripts used to compile apps
+  certs           a topic for the ssl plugin
+  ci              run an application test suite on Heroku
+  clients         OAuth clients on the platform
+  config          environment variables of apps
+  container       Use containers to build and deploy Heroku apps
+  domains         custom domains for apps
+  drains          forward logs to syslog or HTTPS
+  features        add/remove app features
+  git             manage local git repository for app
+  help            display help for heroku
+  keys            add/remove account ssh keys
+  labs            add/remove experimental features
+  local           run heroku app locally
+  logs            display recent log output
+  maintenance     enable/disable access to app
+  members         manage organization members
+  notifications   display notifications
+  orgs            manage organizations
+  pg              manage postgresql databases
+  pipelines       groups of apps that share the same codebase
+  plugins         list installed plugins
+  ps              Client tools for Heroku Exec
+  psql            open a psql shell to the database
+  redis           manage heroku redis instances
+  regions         list available regions for deployment
+  releases        display the releases for an app
+  reviewapps      disposable apps built on GitHub pull requests
+  run             run a one-off process inside a Heroku dyno
+  sessions        OAuth sessions
+  spaces          manage heroku private spaces
+  status          status of the Heroku platform
+  teams           manage teams
+  update          update the Heroku CLI
+  webhooks        setup HTTP notifications of app activity
+
+
+C:\>heroku update
+heroku: Updating CLI... already on latest version: 7.25.0
+
+C:\>heroku login
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/browser/3c85f4fd-810d-4b04-a8f4-5a7a30c05490
+heroku: Waiting for login... !
+JSONError: Unexpected end of JSON input while parsing near ' '
+    at module.exports (C:/Program Files/heroku/client/node_modules/parse-json/index.js:26:19)
+    at HTTP._parse (C:/Program Files/heroku/client/node_modules/@heroku-cli/plugin-auth/node_modules/http-call/lib/http.js:343:25)
+
+C:\>git add-A
+git: 'add-A' is not a git command. See 'git --help'.
+
+C:\>git commit _m "Initial commit"
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\>heroku create
+Creating app... !
+ !    Invalid credentials provided.
+heroku: Press any key to open up the browser to login or q to exit:
+Opening browser to https://cli-auth.heroku.com/auth/browser/4d4a7cf2-1e4d-4a0c-b3a9-aea6d9eee3c2
+Logging in... done
+Logged in as aghaad@live.fr
+Creating app... done, ⬢ dry-crag-92597
+https://dry-crag-92597.herokuapp.com/ | https://git.heroku.com/dry-crag-92597.git
+
+C:\>heroku open
+ »   Error: Missing required flag:
+ »     -a, --app APP  app to run command against
+ »   See more help with --help
+
+C:\>git add-A
+git: 'add-A' is not a git command. See 'git --help'.
+
+
+
+###################################################################################################################### LE 7 JUIN 2019
+INSTALLATION  HEROKU AVEC SYMFONY 
+
+
+
+
+
+
+
+

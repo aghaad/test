@@ -39,7 +39,7 @@ class SendMail2 {
                 ),
                 'text/html'
         );
-        $sendgrid = new \SendGrid('Your API Key');
+        $sendgrid = new \SendGrid('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');
 
         try {
             $response = $sendgrid->send($email);

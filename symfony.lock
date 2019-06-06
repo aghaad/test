@@ -95,6 +95,18 @@
     "egulias/email-validator": {
         "version": "2.1.6"
     },
+    "expertcoder/swiftmailer-send-grid-bundle": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.0",
+            "ref": "43e519108f52c3e84f8215bfff19727911bd6e1d"
+        },
+        "files": [
+            "./config/packages/expert_coder_swiftmailer_send_grid.yaml"
+        ]
+    },
     "facebook/webdriver": {
         "version": "1.6.0"
     },
