@@ -4294,3 +4294,47 @@ C:\wamp64\www\le_musee_du_louvre>composer require sendgrid
 
 require [--dev] [--prefer-source] [--prefer-dist] [--no-progress] [--no-suggest] [--no-update] [--no-scripts] [--update-no-dev] [--update-with-dependencies] [--update-with-all-dependencies] [--ignore-platform-reqs] [--prefer-stable] [--prefer-lowest] [--sort-packages] [-o|--optimize-autoloader] [-a|--classmap-authoritative] [--apcu-autoloader] [--unpack] [--] [<packages>]...
 
+
+
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre>heroku open
+ »   Error: Multiple apps in git remotes
+ »      Usage: --remote heroku-staging
+ »         or: --app ancient-beyond-17061
+ »      Your local git repository has more than 1 app referenced in git remotes.
+ »      Because of this, we can't determine which app you want to run this command against.
+ »      Specify the app you want with --app or --remote.
+ »      Heroku remotes in repo:
+ »      ancient-beyond-17061 (HEROKU)
+ »   ancient-beyond-17061 (heroku-staging)
+ »
+ »      https://devcenter.heroku.com/articles/multiple-environments
+
+C:\wamp64\www\le_musee_du_louvre>heroku config:set APP_ENV=prod
+ »   Error: Multiple apps in git remotes
+ »      Usage: --remote heroku-staging
+ »         or: --app ancient-beyond-17061
+ »      Your local git repository has more than 1 app referenced in git remotes.
+ »      Because of this, we can't determine which app you want to run this command against.
+ »      Specify the app you want with --app or --remote.
+ »      Heroku remotes in repo:
+ »      ancient-beyond-17061 (HEROKU)
+ »   ancient-beyond-17061 (heroku-staging)
+ »
+ »      https://devcenter.heroku.com/articles/multiple-environments
+
+C:\wamp64\www\le_musee_du_louvre>heroku config:set APP_SECRET=3092816f123bdc8d659409f484d80f27
+ »   Error: Multiple apps in git remotes
+ »      Usage: --remote heroku-staging
+ »         or: --app ancient-beyond-17061
+ »      Your local git repository has more than 1 app referenced in git remotes.
+ »      Because of this, we can't determine which app you want to run this command against.
+ »      Specify the app you want with --app or --remote.
+ »      Heroku remotes in repo:
+ »      ancient-beyond-17061 (HEROKU)
+ »   ancient-beyond-17061 (heroku-staging)
+ »
+ »      https://devcenter.heroku.com/articles/multiple-environments
