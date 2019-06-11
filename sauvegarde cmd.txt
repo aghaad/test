@@ -4510,6 +4510,12 @@ Installation failed, reverting ./composer.json to its original content.
 
 
 
+
+
+
+
+
+
 C:\wamp64\www\le_musee_du_louvre>PANTHER_NO_HEADLESS=1 /vendor/bin/simple-phpunit --filter="SmokeTest"
 'PANTHER_NO_HEADLESS' n’est pas reconnu en tant que commande interne
 ou externe, un programme exécutable ou un fichier de commandes.
@@ -4630,3 +4636,479 @@ usage: git clone [<options>] [--] <repo> [<dir>]
     -6, --ipv6            use IPv6 addresses only
     --filter <args>       object filtering
 
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre>git remote ajoute la plateforme 6zco6y3algaea@git.eu-2.platform.sh: 6zco6y3algaea.git
+error: Unknown subcommand: ajoute
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+C:\wamp64\www\le_musee_du_louvre>git add .platform.app.yaml .platform /
+fatal: /: '/' is outside repository
+
+C:\wamp64\www\le_musee_du_louvre>Waiting for other activities to complete
+'Waiting' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>git clone --branch master 6zco6y3algaea@git.eu-2.platform.sh: 6zco6y3algaea.git Billetterie-du-Louvre
+fatal: Too many arguments.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+
+
+C:\wamp64\www\le_musee_du_louvre>
+C:\wamp64\www\le_musee_du_louvre>C:\wamp64\www\le_musee_du_louvre>git remote ajoute la plateforme 6zco6y3algaea@git.eu-2.platform.sh: 6zco6y3algaea.git
+'C:\wamp64\www\le_musee_du_louvre' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>error: Unknown subcommand: ajoute
+'error:' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>usage: git remote [-v | --verbose]
+'usage:' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+< était inattendu.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote rename <old> <new>
+< était inattendu.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote remove <name>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote [-v | --verbose] show [-n] <name>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote prune [-n | --dry-run] <name>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+| était inattendu.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote set-branches [--add] <name> <branch>...
+< était inattendu.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote get-url [--push] [--all] <name>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+< était inattendu.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote set-url --add <name> <newurl>
+< était inattendu.
+
+C:\wamp64\www\le_musee_du_louvre>   or: git remote set-url --delete <name> <url>
+< était inattendu.
+
+C:\wamp64\www\le_musee_du_louvre>
+C:\wamp64\www\le_musee_du_louvre>    -v, --verbose         be verbose; must be placed before a subcommand
+'-v' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>
+C:\wamp64\www\le_musee_du_louvre>
+C:\wamp64\www\le_musee_du_louvre>C:\wamp64\www\le_musee_du_louvre>git add .platform.app.yaml .platform /
+'C:\wamp64\www\le_musee_du_louvre' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>fatal: /: '/' is outside repository
+'fatal:' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>
+C:\wamp64\www\le_musee_du_louvre>C:\wamp64\www\le_musee_du_louvre>Waiting for other activities to complete
+'C:\wamp64\www\le_musee_du_louvre' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>'Waiting' n’est pas reconnu en tant que commande interne
+''Waiting'' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>ou externe, un programme exécutable ou un fichier de commandes.
+'ou' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>
+C:\wamp64\www\le_musee_du_louvre>C:\wamp64\www\le_musee_du_louvre>git clone --branch master 6zco6y3algaea@git.eu-2.platform.sh: 6zco6y3algaea.git Billetterie-du-Louvre
+'C:\wamp64\www\le_musee_du_louvre' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>fatal: Too many arguments.
+'fatal:' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>
+C:\wamp64\www\le_musee_du_louvre>usage: git clone [<options>] [--] <repo> [<dir>]
+Le fichier spécifié est introuvable.
+
+C:\wamp64\www\le_musee_du_louvre>
+C:\wamp64\www\le_musee_du_louvre>    -v, --verbose         be more verbose
+'-v' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    -q, --quiet           be more quiet
+'-q' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --progress            force progress reporting
+'--progress' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    -n, --no-checkout     don't create a checkout
+'-n' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --bare                create a bare repository
+'--bare' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --mirror              create a mirror repository (implies bare)
+'--mirror' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    -l, --local           to clone from a local repository
+'-l' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --no-hardlinks        don't use local hardlinks, always copy
+'--no-hardlinks' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    -s, --shared          setup as shared repository
+'-s' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --recurse-submodules[=<pathspec>]
+Le fichier spécifié est introuvable.
+
+C:\wamp64\www\le_musee_du_louvre>                          initialize submodules in the clone
+'initialize' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    -j, --jobs <n>        number of submodules cloned in parallel
+Le fichier spécifié est introuvable.
+
+C:\wamp64\www\le_musee_du_louvre>    --template <template-directory>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>                          directory from which templates will be used
+'directory' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --reference <repo>    reference repository
+Le fichier spécifié est introuvable.
+
+C:\wamp64\www\le_musee_du_louvre>    --reference-if-able <repo>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>                          reference repository
+'reference' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --dissociate          use --reference only while cloning
+'--dissociate' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+Le fichier spécifié est introuvable.
+
+C:\wamp64\www\le_musee_du_louvre>    -b, --branch <branch>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>                          checkout <branch> instead of the remote's HEAD
+Le fichier spécifié est introuvable.
+
+C:\wamp64\www\le_musee_du_louvre>    -u, --upload-pack <path>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>                          path to git-upload-pack on the remote
+
+C:\wamp64\www\le_musee_du_louvre>    --depth <depth>       create a shallow clone of that depth
+Le fichier spécifié est introuvable.
+
+C:\wamp64\www\le_musee_du_louvre>    --shallow-since <time>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>                          create a shallow clone since a specific time
+'create' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --shallow-exclude <revision>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>                          deepen history of shallow clone, excluding rev
+'deepen' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --single-branch       clone only one branch, HEAD or --branch
+'--single-branch' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --no-tags             don't clone any tags, and make later fetches not to follow them
+'--no-tags' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --shallow-submodules  any cloned submodules will be shallow
+'--shallow-submodules' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --separate-git-dir <gitdir>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>                          separate git dir from working tree
+'separate' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    -c, --config <key=value>
+La syntaxe de la commande n’est pas correcte.
+
+C:\wamp64\www\le_musee_du_louvre>                          set config inside the new repository
+La variable d’environnement config inside the new repository n’est pas définie.
+
+C:\wamp64\www\le_musee_du_louvre>    -4, --ipv4            use IPv4 addresses only
+'-4' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    -6, --ipv6            use IPv6 addresses only
+'-6' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>    --filter <args>       object filtering
+Le fichier spécifié est introuvable.
+
+
+
+
+
+
+
+
+
+
+
+C:\wamp64\www\le_musee_du_louvre>C:\wamp64\www\le_musee_du_louvre/vendor/bin/simple-phpunit --filter="SmokeTest"
+PHPUnit 5.7.27 by Sebastian Bergmann and contributors.
+
+Usage: phpunit [options] UnitTest [UnitTest.php]
+       phpunit [options] <directory>
+
+Code Coverage Options:
+
+  --coverage-clover <file>  Generate code coverage report in Clover XML format.
+  --coverage-crap4j <file>  Generate code coverage report in Crap4J XML format.
+  --coverage-html <dir>     Generate code coverage report in HTML format.
+  --coverage-php <file>     Export PHP_CodeCoverage object to file.
+  --coverage-text=<file>    Generate code coverage report in text format.
+                            Default: Standard output.
+  --coverage-xml <dir>      Generate code coverage report in PHPUnit XML format.
+  --whitelist <dir>         Whitelist <dir> for code coverage analysis.
+  --disable-coverage-ignore Disable annotations for ignoring code coverage.
+
+Logging Options:
+
+  --log-junit <file>        Log test execution in JUnit XML format to file.
+  --log-teamcity <file>     Log test execution in TeamCity format to file.
+  --testdox-html <file>     Write agile documentation in HTML format to file.
+  --testdox-text <file>     Write agile documentation in Text format to file.
+  --testdox-xml <file>      Write agile documentation in XML format to file.
+  --reverse-list            Print defects in reverse order
+
+Test Selection Options:
+
+  --filter <pattern>        Filter which tests to run.
+  --testsuite <name>        Filter which testsuite to run.
+  --group ...               Only runs tests from the specified group(s).
+  --exclude-group ...       Exclude tests from the specified group(s).
+  --list-groups             List available test groups.
+  --list-suites             List available test suites.
+  --test-suffix ...         Only search for test in files with specified
+                            suffix(es). Default: Test.php,.phpt
+
+Test Execution Options:
+
+  --report-useless-tests    Be strict about tests that do not test anything.
+  --strict-coverage         Be strict about @covers annotation usage.
+  --strict-global-state     Be strict about changes to global state
+  --disallow-test-output    Be strict about output during tests.
+  --disallow-resource-usage Be strict about resource usage during small tests.
+  --enforce-time-limit      Enforce time limit based on test size.
+  --disallow-todo-tests     Disallow @todo-annotated tests.
+
+  --process-isolation       Run each test in a separate PHP process.
+  --no-globals-backup       Do not backup and restore $GLOBALS for each test.
+  --static-backup           Backup and restore static attributes for each test.
+
+  --colors=<flag>           Use colors in output ("never", "auto" or "always").
+  --columns <n>             Number of columns to use for progress output.
+  --columns max             Use maximum number of columns for progress output.
+  --stderr                  Write to STDERR instead of STDOUT.
+  --stop-on-error           Stop execution upon first error.
+  --stop-on-failure         Stop execution upon first error or failure.
+  --stop-on-warning         Stop execution upon first warning.
+  --stop-on-risky           Stop execution upon first risky test.
+  --stop-on-skipped         Stop execution upon first skipped test.
+  --stop-on-incomplete      Stop execution upon first incomplete test.
+  --fail-on-warning         Treat tests with warnings as failures.
+  --fail-on-risky           Treat risky tests as failures.
+  -v|--verbose              Output more verbose information.
+  --debug                   Display debugging information during test execution.
+
+  --loader <loader>         TestSuiteLoader implementation to use.
+  --repeat <times>          Runs the test(s) repeatedly.
+  --teamcity                Report test execution progress in TeamCity format.
+  --testdox                 Report test execution progress in TestDox format.
+  --testdox-group           Only include tests from the specified group(s).
+  --testdox-exclude-group   Exclude tests from the specified group(s).
+  --printer <printer>       TestListener implementation to use.
+
+Configuration Options:
+
+  --bootstrap <file>        A "bootstrap" PHP file that is run before the tests.
+  -c|--configuration <file> Read configuration from XML file.
+  --no-configuration        Ignore default configuration file (phpunit.xml).
+  --no-coverage             Ignore code coverage configuration.
+  --no-extensions           Do not load PHPUnit extensions.
+  --include-path <path(s)>  Prepend PHP's include_path with given path(s).
+  -d key[=value]            Sets a php.ini value.
+  --generate-configuration  Generate configuration file with suggested settings.
+
+Miscellaneous Options:
+
+  -h|--help                 Prints this usage information.
+  --version                 Prints the version and exits.
+  --atleast-version <min>   Checks that version is greater than min and exits.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+C:\wamp64\www\le_musee_du_louvre>$crawler = $client->request('GET', '/post/hello-world');
+'$crawler' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/css-selector
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [KO]
+ [KO]
+Script cache:clear returned with error code 255
+!!
+!!  Fatal error: Uncaught Symfony\Component\Dotenv\Exception\FormatException: Missing = in the environment variable declaration in "C:\wamp64\www\le_musee_du_louvre/.env" at line 28.
+!!  ...iler-bundle ###\n\n\n\nC:\wamp64\www\le_muse...
+!!                            ^ line 28 offset 1241 in C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php:409
+!!  Stack trace:
+!!  #0 C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php(169): Symfony\Component\Dotenv\Dotenv->createFormatException('Missing = in th...')
+!!  #1 C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php(124): Symfony\Component\Dotenv\Dotenv->lexVarname()
+!!  #2 C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php(57): Symfony\Component\Dotenv\Dotenv->parse('# This file is ...', 'C:\\wamp64\\www\\l...')
+!!  #3 C:\wamp64\www\le_musee_du_louvre\src\Kernel.php(117): Symfony\Component\Dotenv\Dotenv->load('C:\\wamp64\\www\\l...')
+!!  #4 C:\wamp64\www\le_musee_du_louvre\src\Kernel.php(107): App\Kernel::loadEnv(Object(Symfony\Component\Dotenv\Dotenv), 'C in C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php on line 409
+!!
+Script @auto-scripts was called via post-update-cmd
+
+Installation failed, reverting ./composer.json to its original content.
+
+
+C:\wamp64\www\le_musee_du_louvre>composer require --dev symfony/test-pack
+Using version ^1.0 for symfony/test-pack
+./composer.json has been updated
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Restricting packages listed in "symfony/symfony" to "4.1.*"
+Nothing to install or update
+Generating autoload files
+ocramius/package-versions:  Generating version class...
+ocramius/package-versions: ...done generating version class
+Executing script cache:clear [KO]
+ [KO]
+Script cache:clear returned with error code 255
+!!
+!!  Fatal error: Uncaught Symfony\Component\Dotenv\Exception\FormatException: Missing = in the environment variable declaration in "C:\wamp64\www\le_musee_du_louvre/.env" at line 28.
+!!  ...iler-bundle ###\n\n\n\nC:\wamp64\www\le_muse...
+!!                            ^ line 28 offset 1241 in C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php:409
+!!  Stack trace:
+!!  #0 C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php(169): Symfony\Component\Dotenv\Dotenv->createFormatException('Missing = in th...')
+!!  #1 C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php(124): Symfony\Component\Dotenv\Dotenv->lexVarname()
+!!  #2 C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php(57): Symfony\Component\Dotenv\Dotenv->parse('# This file is ...', 'C:\\wamp64\\www\\l...')
+!!  #3 C:\wamp64\www\le_musee_du_louvre\src\Kernel.php(117): Symfony\Component\Dotenv\Dotenv->load('C:\\wamp64\\www\\l...')
+!!  #4 C:\wamp64\www\le_musee_du_louvre\src\Kernel.php(107): App\Kernel::loadEnv(Object(Symfony\Component\Dotenv\Dotenv), 'C in C:\wamp64\www\le_musee_du_louvre\vendor\symfony\dotenv\Dotenv.php on line 409
+!!
+Script @auto-scripts was called via post-update-cmd
+
+Installation failed, reverting ./composer.json to its original content.
